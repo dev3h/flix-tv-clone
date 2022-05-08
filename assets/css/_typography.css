@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--pri-font);
+}
