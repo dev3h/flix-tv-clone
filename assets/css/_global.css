@@ -1,6 +1,22 @@
 .container {
-    max-width: 1330px;
-    padding: 0 1.5rem;
-    margin: 0 9.5rem;
-    overflow-x: hidden;
+  max-width: 133rem;
+  padding: 0 1.5rem;
+  margin: 0 9.5rem;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 1.2rem;
+  background: var(--bg-shape);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.6rem;
+  background: linear-gradient(transparent, #00c6ff);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #0073ffbd);
+}
+@media (max-width: 1439px) {
+  .container {
+    margin: 0 15rem;
+  }
 }
