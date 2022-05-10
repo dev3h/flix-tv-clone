@@ -18,67 +18,73 @@
               <img src="./assets/images/logo.svg" alt="logo" />
             </a>
             <!-- menu -->
-            <ul class="menu">
+            <ul class="header-menu">
               <!-- Home -->
-              <li class="menu__item">
-                Home
-                <span class="circle"></span>
-                <ul class="sub-menu">
-                  <li class="menu__item">
+              <li class="header-menu__item">
+                <a href="#">
+                  Home
+                  <span class="circle"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
                     <a href="#">Home style 1</a>
                   </li>
-                  <li class="menu__item">
+                  <li>
                     <a href="#">Home style 1</a>
                   </li>
-                  <li class="menu__item">
+                  <li>
                     <a href="#">Home style 1</a>
                   </li>
                 </ul>
               </li>
               <!-- Catalog -->
-              <li class="menu__item">
-                Catalog
-                <span class="circle"></span>
-                <ul class="sub-menu">
-                  <li class="menu__item"><a href="#">Catalog</a></li>
-                  <li class="menu__item">
-                    Catalog dropdown
-                    <ul class="sub-menu">
-                      <li class="menu__item"><a href="#">Actions</a></li>
-                      <li class="menu__item"><a href="#">Biography</a></li>
-                      <li class="menu__item"><a href="#">Documentary</a></li>
-                      <li class="menu__item"><a href="#">Horror</a></li>
+              <li class="header-menu__item">
+                <a href="#">
+                  Catalog
+                  <span class="circle"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Catalog</a></li>
+                  <li>
+                    <a href="#"> Catalog dropdown</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Actions</a></li>
+                      <li><a href="#">Biography</a></li>
+                      <li><a href="#">Documentary</a></li>
+                      <li><a href="#">Horror</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a href="#">Category style 1</a></li>
-                  <li class="menu__item"><a href="#">Category style 2</a></li>
-                  <li class="menu__item"><a href="#">Details style 3</a></li>
-                  <li class="menu__item"><a href="#">Details style 4</a></li>
-                  <li class="menu__item"><a href="#">Details style 5</a></li>
+                  <li><a href="#">Category style 1</a></li>
+                  <li><a href="#">Category style 2</a></li>
+                  <li><a href="#">Details style 3</a></li>
+                  <li><a href="#">Details style 4</a></li>
+                  <li><a href="#">Details style 5</a></li>
                 </ul>
               </li>
               <!-- Pricing plans -->
-              <li class="menu__item"><a href="#">Pricing plans</a></li>
+              <li class="header-menu__item"><a href="#">Pricing plans</a></li>
               <!-- Live -->
-              <li class="menu__item">
+              <li class="header-menu__item">
                 <a href="#">
                   LIVE
                   <span class="circle circle--stream"></span>
                 </a>
               </li>
-              <li class="menu__item">
-                <i class="fal fa-ellipsis-h menu-link--more"></i>
-                <ul class="sub-menu">
-                  <li class="menu__item"><a href="#">About us</a></li>
-                  <li class="menu__item"><a href="#">Profile</a></li>
-                  <li class="menu__item"><a href="#">Contact</a></li>
-                  <li class="menu__item"><a href="#">Interview</a></li>
-                  <li class="menu__item"><a href="#">Admin pages</a></li>
-                  <li class="menu__item"><a href="#">Privacy policy</a></li>
-                  <li class="menu__item"><a href="#">Sign in</a></li>
-                  <li class="menu__item"><a href="#">Sign up</a></li>
-                  <li class="menu__item"><a href="#">Forgot password</a></li>
-                  <li class="menu__item"><a href="#">404 Page</a></li>
+              <li class="header-menu__item">
+                <a href="#" class="menu-link--more">
+                  <i class="fal fa-ellipsis-h"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Interview</a></li>
+                  <li><a href="#">Admin pages</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="#">Sign in</a></li>
+                  <li><a href="#">Sign up</a></li>
+                  <li><a href="#">Forgot password</a></li>
+                  <li><a href="#">404 Page</a></li>
                 </ul>
               </li>
             </ul>
@@ -103,10 +109,202 @@
         </div>
       </header>
       <!-- end header -->
-      <main
-        class="main"
-        style="min-height: 100vh; background: var(--bg-color)"
-      ></main>
+      <main class="main">
+        <!-- hero slider -->
+        <section class="slider home-carousel">
+          <div class="container-fluid">
+            <div class="slider-main">
+              <!-- item1 -->
+              <div class="slider-item">
+                <div class="home__card">
+                  <a href="#">
+                    <img src="./assets/images/home1.jpg" alt="" />
+                  </a>
+                  <div class="home__content">
+                    <h2 class="home__title">Money Plane</h2>
+                    <ul>
+                      <li>Free</li>
+                      <li>Action</li>
+                      <li>2021</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="home__add">
+                    <i class="fal fa-bookmark"></i>
+                  </button>
+                  <button type="button" class="home__rating">
+                    <i class="fal fa-star"></i>
+                    9.1
+                  </button>
+                </div>
+              </div>
+              <!-- item2 -->
+              <div class="slider-item">
+                <div class="home__card">
+                  <a href="#">
+                    <img src="./assets/images/home2.jpg" alt="" />
+                  </a>
+                  <div class="home__content">
+                    <h2 class="home__title">The Art of Political</h2>
+                    <ul>
+                      <li>Free</li>
+                      <li>Documentary</li>
+                      <li>2019</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="home__add">
+                    <i class="fal fa-bookmark"></i>
+                  </button>
+                  <button type="button" class="home__rating">
+                    <i class="fal fa-star"></i>
+                    8.3
+                  </button>
+                </div>
+              </div>
+              <!-- item3 -->
+              <div class="slider-item">
+                <div class="home__card">
+                  <a href="#">
+                    <img src="./assets/images/home3.jpg" alt="" />
+                  </a>
+                  <div class="home__content">
+                    <h2 class="home__title">Antebellum</h2>
+                    <ul>
+                      <li>Free</li>
+                      <li>horror</li>
+                      <li>2021</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="home__add">
+                    <i class="fal fa-bookmark"></i>
+                  </button>
+                  <button type="button" class="home__rating">
+                    <i class="fal fa-star"></i>
+                    7.9
+                  </button>
+                </div>
+              </div>
+              <!-- item4 -->
+              <div class="slider-item">
+                <div class="home__card">
+                  <a href="#">
+                    <img src="./assets/images/home4.jpg" alt="" />
+                  </a>
+                  <div class="home__content">
+                    <h2 class="home__title">Kids Next Door</h2>
+                    <ul>
+                      <li>Free</li>
+                      <li>Documentary</li>
+                      <li>2017</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="home__add">
+                    <i class="fal fa-bookmark"></i>
+                  </button>
+                  <button type="button" class="home__rating">
+                    <i class="fal fa-star"></i>
+                    8.4
+                  </button>
+                </div>
+              </div>
+              <!-- item5 -->
+              <div class="slider-item">
+                <div class="home__card">
+                  <a href="#">
+                    <img src="./assets/images/home5.jpg" alt="" />
+                  </a>
+                  <div class="home__content">
+                    <h2 class="home__title">The Empty Man</h2>
+                    <ul>
+                      <li>Free</li>
+                      <li>Horror</li>
+                      <li>2020</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="home__add">
+                    <i class="fal fa-bookmark"></i>
+                  </button>
+                  <button type="button" class="home__rating">
+                    <i class="fal fa-star"></i>
+                    8.4
+                  </button>
+                </div>
+              </div>
+              <!-- item6 -->
+              <div class="slider-item">
+                <div class="home__card">
+                  <a href="#">
+                    <img src="./assets/images/home6.jpg" alt="" />
+                  </a>
+                  <div class="home__content">
+                    <h2 class="home__title">Jungleland</h2>
+                    <ul>
+                      <li>Free</li>
+                      <li>Documentary</li>
+                      <li>2020</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="home__add">
+                    <i class="fal fa-bookmark"></i>
+                  </button>
+                  <button type="button" class="home__rating">
+                    <i class="fal fa-star"></i>
+                    9.1
+                  </button>
+                </div>
+              </div>
+              <!-- item7 -->
+              <div class="slider-item">
+                <div class="home__card">
+                  <a href="#">
+                    <img src="./assets/images/home7.jpg" alt="" />
+                  </a>
+                  <div class="home__content">
+                    <h2 class="home__title">Bad Impulse</h2>
+                    <ul>
+                      <li>Free</li>
+                      <li>History</li>
+                      <li>2017</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="home__add">
+                    <i class="fal fa-bookmark"></i>
+                  </button>
+                  <button type="button" class="home__rating">
+                    <i class="fal fa-star"></i>
+                    8.8
+                  </button>
+                </div>
+              </div>
+              <!-- item8 -->
+              <div class="slider-item">
+                <div class="home__card">
+                  <a href="#">
+                    <img src="./assets/images/home8.jpg" alt="" />
+                  </a>
+                  <div class="home__content">
+                    <h2 class="home__title">Tenet</h2>
+                    <ul>
+                      <li>Free</li>
+                      <li>Action</li>
+                      <li>2021</li>
+                    </ul>
+                  </div>
+                  <button type="button" class="home__add">
+                    <i class="fal fa-bookmark"></i>
+                  </button>
+                  <button type="button" class="home__rating">
+                    <i class="fal fa-star"></i>
+                    7.6
+                  </button>
+                </div>
+              </div>
+              <button class="btn-prev"></button>
+              <button class="btn-next"></button>
+            </div>
+          </div>
+        </section>
+        <!-- end hero slider -->
+      </main>
       <footer class="footer">
         <div class="container">
           <div class="footer-main">

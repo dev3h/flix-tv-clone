@@ -1,0 +1,128 @@
+.main {
+  margin-top: 10rem;
+  background: var(--bg-color);
+}
+.home-carousel {
+  position: relative;
+  height: 27.9rem;
+}
+.home-carousel .container-fluid {
+  height: 100%;
+}
+.slider-main {
+  width: 100%;
+  height: 100%;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  overflow-x: scroll;
+}
+/* .slider-main::-webkit-scrollbar {
+  display: none;
+} */
+.home__card {
+  position: relative;
+  width: 35rem;
+  height: 100%;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  user-select: none;
+}
+.home__card:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.home__card:hover .home__title {
+  color: var(--pri-color);
+}
+.home__card:hover button {
+  opacity: 1;
+}
+.home__card img {
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+.home__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.388);
+  cursor: pointer;
+}
+.home__content {
+  position: absolute;
+  top: 55%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+.home__content .home__title {
+  font-size: 3rem;
+  font-family: var(--second-font);
+  line-height: 1.2;
+  transition: 0.5s ease-in-out;
+}
+.home__content ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+.home__card > button {
+  position: absolute;
+  top: 3rem;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background: var(--bg-shape);
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.home__card > button:hover i {
+  color: var(--yellow-color);
+}
+.home__card > button i {
+  color: var(--pri-color);
+  transition: 0.5s ease-in-out;
+}
+.home__add {
+  left: 3rem;
+}
+.home__card button.home__rating {
+  width: 7rem;
+  right: 3rem;
+  gap: 1rem;
+  color: #Fff;
+  padding: 0 1rem;
+}
+.slider-main > button {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 10.3rem;
+  height: 100%;
+  border: none;
+  background: transparent;
+}
+.slider-main > button.btn-prev {
+  left: 0;
+}
+.slider-main > button.btn-next{
+  right: 0;
+}
