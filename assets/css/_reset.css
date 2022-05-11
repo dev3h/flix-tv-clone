@@ -22,3 +22,8 @@ button {
     cursor: pointer;
     border: none;
 }
+select {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
