@@ -21,6 +21,7 @@ ul {
 button {
     cursor: pointer;
     border: none;
+    background: transparent;
 }
 select {
     border: none;

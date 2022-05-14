@@ -117,8 +117,6 @@
   z-index: -1;
   width: 10.3rem;
   height: 100%;
-  border: none;
-  background: transparent;
 }
 .slider-main > button.btn-prev {
   left: 0;
