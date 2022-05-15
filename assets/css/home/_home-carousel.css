@@ -12,15 +12,20 @@
 .slider-main {
   width: 100%;
   height: 100%;
-  padding: 0 3rem;
+  /* padding: 0 3rem; */
   display: flex;
-  justify-content: center;
   gap: 3rem;
   overflow-x: scroll;
 }
 /* .slider-main::-webkit-scrollbar {
   display: none;
 } */
+.slider-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 0;
+}
 .home__card {
   position: relative;
   width: 35rem;

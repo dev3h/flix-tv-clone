@@ -18,6 +18,106 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, #0073ffbd);
 }
+.card {
+  height: 100%;
+}
+.card__cover img {
+  border-radius: 1.6rem;
+  transition: 0.3s ease-in-out;
+}
+a.card__cover:hover {
+  color: #fff;
+}
+.card__cover > i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5.6rem;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.card__title {
+  margin: 1.5rem 0;
+  font-size: 1.7rem;
+  font-family: var(--second-font);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+}
+.card__title > a {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.card__list {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--white-color);
+  line-height: 1.8rem;
+}
+.card:hover .card__cover > i,
+.card:hover button {
+  opacity: 1;
+}
+.card:hover .card__cover img {
+  filter: blur(0.3rem);
+}
+.card:hover .card__title > a {
+  color: var(--pri-color);
+}
+.card > button {
+  position: absolute;
+  top: 1rem;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background: var(--bg-shape);
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.card > button:hover i {
+  color: var(--yellow-color);
+}
+.card > button i {
+  color: var(--pri-color);
+  transition: 0.5s ease-in-out;
+}
+.card__add {
+  left: 1rem;
+}
+.card button.card__rating {
+  width: 7rem;
+  right: 1rem;
+  gap: 1rem;
+  color: #fff;
+  padding: 0 1rem;
+}
+.btn-sample {
+  border-radius: 1.6rem;
+  background: var(--bg-shape);
+  color: var(--white-color);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+.btn-sample:hover {
+  background: var(--pri-color);
+  color: #fff;
+}
+.section__title {
+  color: #fff;
+  font-size: 3.6rem;
+  font-family: var(--second-font);
+  margin-bottom: 3rem;
+}
 @media (max-width: 1439px) {
   .container {
     margin: 0 15rem;

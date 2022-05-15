@@ -1,0 +1,13 @@
+.subscription {
+    padding: 8rem 0;
+}
+.subscription-main .slider-item {
+    flex: 1 0 100%;
+}
+.subscription-main .card .card__title {
+    max-width: 20rem;
+    text-align: center;
+}
+.card__list.card__list--sub {
+    justify-content: center;
+}

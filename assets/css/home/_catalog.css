@@ -1,10 +1,13 @@
 .catalog {
   width: 100%;
-  padding: 3rem 0 8rem;
+  height: 139.6rem;
+  padding: 6rem 0 8rem;
+  background: #141a26;
 }
-.catalog  > .container {
+/* .catalog > .container {
+  height: 129.6rem;
   overflow: hidden;
-}
+} */
 .catalog-main {
   width: 100%;
   padding: 0 1.5rem;
@@ -12,7 +15,7 @@
 .catalog__nav {
   width: 100%;
   height: 8rem;
-  margin-top: 10rem;
+  margin-top: 6rem;
   margin-bottom: 3rem;
   padding: 2rem 3rem;
   border-radius: 1.6rem;
@@ -63,7 +66,7 @@
 /* catalog grid */
 .catalog__grid {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(6,1fr);
+  grid-template: repeat(3, 1fr) / repeat(6, 1fr);
   gap: 10rem 5rem;
 }
 .catalog__item {
@@ -71,79 +74,8 @@
   height: 22.5rem;
   position: relative;
 }
-.catalog__item .card {
-  width: 100%;
-  height: 100%;
-}
-.card__cover  img {
-  border-radius: 1.6rem;
-  transition: 0.3s ease-in-out;
-}
-a.card__cover:hover {
-  color: #fff;
-}
-.card__cover > i {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 5.6rem;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-.card__title {
-  margin: 1.5rem 0;
-  font-size: 1.7rem;
-  font-family: var(--second-font);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: var(--white-color);
-}
-.card__list {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 1.2rem;
-  color: var(--white-color);
-  line-height: 1.8rem;
-}
-.card:hover .card__cover > i,
-.card:hover button {
-  opacity: 1;
-}
-.card:hover .card__cover img {
-  filter: blur(0.3rem);
-}
-.card > button {
-  position: absolute;
-  top: 1rem;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 1rem;
-  background: var(--bg-shape);
-  font-size: 1.4rem;
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-}
-.card > button:hover i {
-  color: var(--yellow-color);
-}
-.card > button i {
-  color: var(--pri-color);
-  transition: 0.5s ease-in-out;
-}
-.card__add {
-  left: 1rem;
-}
-.card button.card__rating {
-  width: 7rem;
-  right: 1rem;
-  gap: 1rem;
-  color: #Fff;
-  padding: 0 1rem;
+button.catalog__more {
+  width: 18rem;
+  height: 6rem;
+  margin: 15rem auto 0;
 }
