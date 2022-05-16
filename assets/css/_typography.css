@@ -13,3 +13,16 @@ a:hover {
   color: var(--pri-color);
   transition: 0.3s ease-in-out;
 }
+.section__title {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 3.6rem;
+  font-family: var(--second-font);
+  text-transform: capitalize;
+}
+.section__text {
+  margin-bottom: 1rem;
+  color: var(--white-color);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}

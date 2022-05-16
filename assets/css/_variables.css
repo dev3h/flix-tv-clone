@@ -1,9 +1,11 @@
 :root {
-    --bg-color: #131720;
-    --bg-shape: #151f30;
-    --pri-color: #2f80ed;
-    --white-color: #e0e0e0;
-    --yellow-color: #ffc312;
-    --pri-font: 'Inter', sans-serif;
-    --second-font: 'Rubik', sans-serif;
+  --bg-color: #131720;
+  --bg-shape: #151f30;
+  --pri-color: #2f80ed;
+  --white-color: #e0e0e0;
+  --yellow-color: #ffc312;
+  --green-color: #29b474;
+  --red-color: #eb5757;
+  --pri-font: "Inter", sans-serif;
+  --second-font: "Rubik", sans-serif;
 }

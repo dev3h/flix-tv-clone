@@ -1,4 +1,5 @@
 .subscription {
+    position: relative;
     padding: 8rem 0;
 }
 .subscription-main .slider-item {
@@ -10,4 +11,23 @@
 }
 .card__list.card__list--sub {
     justify-content: center;
+}
+button.section__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: var(--bg-shape);
+    color: var(--white-color);
+}
+button.section__nav:hover {
+    background: var(--pri-color);
+}
+button.section__nav.section__nav--prev {
+    left: 2rem;
+}
+button.section__nav.section__nav--next {
+    right: 2rem;
 }

@@ -19,7 +19,11 @@
   background: linear-gradient(transparent, #0073ffbd);
 }
 .card {
+  position: relative;
   height: 100%;
+}
+.card__cover {
+  position: relative;
 }
 .card__cover img {
   border-radius: 1.6rem;
@@ -81,7 +85,6 @@ a.card__cover:hover {
   background: var(--bg-shape);
   font-size: 1.4rem;
   opacity: 0;
-  transition: 0.5s ease-in-out;
 }
 .card > button:hover i {
   color: var(--yellow-color);
@@ -105,18 +108,15 @@ a.card__cover:hover {
   background: var(--bg-shape);
   color: var(--white-color);
   font-size: 1.4rem;
+  font-family: var(--pri-font);
   text-transform: uppercase;
-  transition: 0.3s ease-in-out;
 }
 .btn-sample:hover {
   background: var(--pri-color);
   color: #fff;
 }
-.section__title {
-  color: #fff;
-  font-size: 3.6rem;
-  font-family: var(--second-font);
-  margin-bottom: 3rem;
+button {
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 1439px) {
   .container {

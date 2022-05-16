@@ -15,7 +15,7 @@
   /* padding: 0 3rem; */
   display: flex;
   gap: 3rem;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 /* .slider-main::-webkit-scrollbar {
   display: none;
