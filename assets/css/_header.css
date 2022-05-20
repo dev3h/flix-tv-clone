@@ -50,7 +50,7 @@
   cursor: pointer;
 }
 .header-menu > .header-menu__item > .dropdown-menu {
-  display: none;
+  /* display: none; */
   background: var(--bg-shape);
   margin-top: 2.5rem;
   padding: 0 2rem;

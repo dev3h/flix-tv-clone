@@ -12,6 +12,9 @@
   border-radius: 1.6rem;
   background: var(--bg-shape);
 }
+.plan__card:nth-child(2) {
+  background: var(--pri-color);
+}
 .plan__title {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
@@ -19,6 +22,10 @@
   font-size: 2rem;
   font-family: var(--second-font);
   border-bottom: 1px solid rgba(47, 128, 237, 0.1);
+}
+.plan__card:nth-child(2) .plan__price,
+.plan__card:nth-child(2) .plan__title {
+  border-color: rgba(21,31,48,0.2);
 }
 .plan__list li {
   margin-bottom: 1.5rem;
@@ -54,4 +61,8 @@ button.plan__btn {
   padding: 2rem;
   width: 100%;
   background: var(--bg-color);
+}
+.plan__card:nth-child(2) .btn-sample:hover {
+  background: #fff;
+  color: #151f30;
 }
