@@ -1,13 +1,10 @@
 .catalog {
   width: 100%;
-  height: 134.6rem;
   background: #141a26;
+  padding: 5rem 0;
 }
-/* .catalog > .container {
-  height: 129.6rem;
-  overflow: hidden;
-} */
 .catalog-main {
+  position: relative;
   width: 100%;
   padding: 0 1.5rem;
 }
@@ -57,15 +54,17 @@
   color: var(--white-color);
   font-size: 1.4rem;
   line-height: 3.1rem;
+  transition: 0.2s linear;
 }
 .catalog-radio span.active {
   background: var(--bg-shape);
   color: var(--pri-color) !important;
+  transition: 0.2s linear;
 }
 /* catalog grid */
 .catalog__grid {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 10rem 5rem;
 }
 .catalog__item {
@@ -77,4 +76,26 @@ button.catalog__more {
   width: 18rem;
   height: 6rem;
   margin: 15rem auto 0;
+}
+.not-found-film {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--red-color);
+  font-size: 3.6rem;
+  animation: scale 1.2s ease-in-out infinite;
+}
+@keyframes scale {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0.3rem 0.5rem var(--yellow-color);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }

@@ -7,112 +7,14 @@
     <title>Film Design</title>
     <link rel="stylesheet" href="./assets/css/all.css" />
     <link rel="stylesheet" href="./assets/css/app.css" />
+    <!-- import header and footer -->
+    <script src="./js/Header.js"></script>
+    <script src="./js/Footer.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <!-- header -->
-      <header class="header">
-        <div class="container">
-          <div class="header-main">
-            <!-- logo -->
-            <a href="./index.html" class="logo">
-              <img src="./assets/images/logo.svg" alt="logo" />
-            </a>
-            <!-- menu -->
-            <ul class="header-menu">
-              <!-- Home -->
-              <li class="header-menu__item">
-                <a href="./index.html">
-                  Home
-                  <span class="circle"></span>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">Home style 1</a>
-                    </li>
-                    <li>
-                      <a href="#">Home style 2</a>
-                    </li>
-                    <li>
-                      <a href="#">Home style 3</a>
-                    </li>
-                  </ul>
-                </a>
-              </li>
-              <!-- Catalog -->
-              <li class="header-menu__item">
-                <a href="#">
-                  Catalog
-                  <span class="circle"></span>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Catalog</a></li>
-                    <li>
-                      <a href="#">
-                        Catalog dropdown
-                        <span class="circle" style="background: var(--pri-color)"></span>
-                        <ul class="sub-dropdown-menu">
-                          <li><a href="#">Actions</a></li>
-                          <li><a href="#">Biography</a></li>
-                          <li><a href="#">Documentary</a></li>
-                          <li><a href="#">Horror</a></li>
-                        </ul>
-                      </a>
-                    </li>
-                    <li><a href="#">Category style 1</a></li>
-                    <li><a href="#">Category style 2</a></li>
-                    <li><a href="#">Details style 3</a></li>
-                    <li><a href="#">Details style 4</a></li>
-                    <li><a href="#">Details style 5</a></li>
-                  </ul>
-                </a>
-              </li>
-              <!-- Pricing plans -->
-              <li class="header-menu__item"><a href="#">Pricing plans</a></li>
-              <!-- Live -->
-              <li class="header-menu__item">
-                <a href="#">
-                  LIVE
-                  <span class="circle circle--stream"></span>
-                </a>
-              </li>
-              <!-- more -->
-              <li class="header-menu__item">
-                <a href="#" class="menu-link--more">
-                  <i class="fal fa-ellipsis-h"></i>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Interview</a></li>
-                    <li><a href="#">Admin pages</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Sign in</a></li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Forgot password</a></li>
-                    <li><a href="#">404 Page</a></li>
-                  </ul>
-                </a>
-              </li>
-            </ul>
-            <!-- header action -->
-            <div class="header__action">
-              <form class="header__form">
-                <input
-                  type="text"
-                  id="header__form-input"
-                  placeholder="I'm looking for..."
-                />
-                <label for="header__form-input" class="header__search">
-                  <i class="fal fa-search"></i>
-                </label>
-              </form>
-              <a href="#" class="header__user">
-                <span>Sign in</span>
-                <i class="fad fa-sign-in"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
+      <main-header></main-header>
       <!-- end header -->
       <main class="main">
         <!-- hero slider -->
@@ -317,20 +219,32 @@
               <div class="catalog__nav">
                 <div class="catalog__select-wrap">
                   <select class="catalog__select">
-                    <option value="All genres">All genres</option>
-                    <option value="Action">Action</option>
-                    <option value="Horror">Horror</option>
-                    <option value="Drama">Drama</option>
-                    <option value="History">History</option>
-                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="All genres" data-filter="all">
+                      All genres
+                    </option>
+                    <option value="Action" data-filter="action">Action</option>
+                    <option value="Biography" data-filter="biography">
+                      Biography
+                    </option>
+                    <option value="Comedy" data-filter="comedy">Comedy</option>
+                    <option value="Drama" data-filter="drama">Drama</option>
+                    <option value="History" data-filter="history">
+                      History
+                    </option>
+                    <option value="Horror" data-filter="horror">Horror</option>
+                    <option value="Thriller" data-filter="thriller">
+                      Thriller
+                    </option>
                   </select>
                   <!-- catalog_select -->
                   <select class="catalog__select">
-                    <option value="All the years">All the years</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
+                    <option value="All the years" data-filter="all">
+                      All the years
+                    </option>
+                    <option value="2019" data-filter="2019">2019</option>
+                    <option value="2020" data-filter="2020">2020</option>
+                    <option value="2021" data-filter="2021">2021</option>
+                    <option value="2022" data-filter="2022">2022</option>
                   </select>
                 </div>
                 <div class="catalog-radio">
@@ -342,7 +256,11 @@
               <!-- catalog grid -->
               <div class="catalog__grid">
                 <!-- grid item 1 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="action"
+                  dataFilmYear="2019"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog1.png" alt="" />
@@ -366,7 +284,11 @@
                   </div>
                 </div>
                 <!-- grid item 2 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="comedy"
+                  dataFilmYear="2020"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog2.png" alt="" />
@@ -385,12 +307,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Comedy</li>
-                      <li>2012</li>
+                      <li>2020</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 3 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="history"
+                  dataFilmYear="2021"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog3.png" alt="" />
@@ -409,12 +335,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>History</li>
-                      <li>2013</li>
+                      <li>2021</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 4 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="biography"
+                  dataFilmYear="2022"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog4.png" alt="" />
@@ -433,12 +363,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Biography</li>
-                      <li>2014</li>
+                      <li>2022</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 5 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="horror"
+                  dataFilmYear="2019"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog5.png" alt="" />
@@ -457,12 +391,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Horror</li>
-                      <li>1994</li>
+                      <li>2019</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 6 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="history"
+                  dataFilmYear="2020"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog6.png" alt="" />
@@ -481,12 +419,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>History</li>
-                      <li>2015</li>
+                      <li>2020</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 7 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="drama"
+                  dataFilmYear="2021"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog7.png" alt="" />
@@ -505,12 +447,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Drama</li>
-                      <li>2018</li>
+                      <li>2021</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 8 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="drama"
+                  dataFilmYear="2022"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog8.png" alt="" />
@@ -529,12 +475,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Drama</li>
-                      <li>2016</li>
+                      <li>2022</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 9 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="drama"
+                  dataFilmYear="2019"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog9.png" alt="" />
@@ -558,7 +508,11 @@
                   </div>
                 </div>
                 <!-- grid item 10 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="biography"
+                  dataFilmYear="2020"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog10.png" alt="" />
@@ -577,12 +531,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Biography</li>
-                      <li>2019</li>
+                      <li>2020</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 11 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="drama"
+                  dataFilmYear="2021"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog11.png" alt="" />
@@ -601,12 +559,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Drama</li>
-                      <li>2011</li>
+                      <li>2021</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 12 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="drama"
+                  dataFilmYear="2022"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog12.png" alt="" />
@@ -625,12 +587,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Drama</li>
-                      <li>2020</li>
+                      <li>2022</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 13 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="thriller"
+                  dataFilmYear="2019"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog13.png" alt="" />
@@ -649,12 +615,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Thriller</li>
-                      <li>2020</li>
+                      <li>2019</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 14 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="biography"
+                  dataFilmYear="2020"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog14.png" alt="" />
@@ -673,12 +643,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Biography</li>
-                      <li>2019</li>
+                      <li>2020</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 15 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="horror"
+                  dataFilmYear="2021"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog15.png" alt="" />
@@ -697,12 +671,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Horror</li>
-                      <li>2018</li>
+                      <li>2021</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 16 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="horror"
+                  dataFilmYear="2022"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog16.png" alt="" />
@@ -721,12 +699,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Horror</li>
-                      <li>2018</li>
+                      <li>2022</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 17 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="thriller"
+                  dataFilmYear="2019"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog17.png" alt="" />
@@ -745,12 +727,16 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Thriller</li>
-                      <li>2018</li>
+                      <li>2019</li>
                     </ul>
                   </div>
                 </div>
                 <!-- grid item 18 -->
-                <div class="catalog__item">
+                <div
+                  class="catalog__item"
+                  data-filmGenre="thriller"
+                  dataFilmYear="2020"
+                >
                   <div class="card">
                     <a href="#" class="card__cover">
                       <img src="./assets/images/catalog/catalog18.png" alt="" />
@@ -769,11 +755,12 @@
                     <ul class="card__list">
                       <li>Free</li>
                       <li>Thriller</li>
-                      <li>2019</li>
+                      <li>2020</li>
                     </ul>
                   </div>
                 </div>
               </div>
+              <h2 class="not-found-film"></h2>
               <button class="catalog__more btn-sample">load more</button>
             </div>
           </div>
@@ -1210,77 +1197,8 @@
           </button>
         </section>
       </main>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-main">
-            <div class="top-footer">
-              <div class="footer-left">
-                <div class="footer__flixtv">
-                  <img src="./assets/images/logo.svg" alt="logo" />
-                </div>
-                <p class="footer__tagline">
-                  Movies & TV Show, Online cinema, <br />
-                  Movie database HTML template
-                </p>
-                <div class="footer__social">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                  <a href="#"><i class="fab fa-tiktok"></i></a>
-                </div>
-              </div>
-              <div class="footer-right">
-                <div class="footer-col">
-                  <h6 class="footer__title">FlixTV</h6>
-                  <div class="footer__nav">
-                    <a href="#">About us</a>
-                    <a href="#">My profile</a>
-                    <a href="#">Pricing plans</a>
-                    <a href="#">Contact</a>
-                  </div>
-                </div>
-                <div class="footer-col">
-                  <h6 class="footer__title">Browse</h6>
-                  <div class="footer__group">
-                    <div class="footer__nav">
-                      <a href="#">Live TV</a>
-                      <a href="#">Live news</a>
-                      <a href="#">Live Sports</a>
-                      <a href="#">Streaming Library</a>
-                    </div>
-                    <div class="footer__nav">
-                      <a href="#">TV Show</a>
-                      <a href="#">Movies</a>
-                      <a href="#">Kids</a>
-                      <a href="#">Collections</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="footer-col">
-                  <h6 class="footer__title">Help</h6>
-                  <div class="footer__nav">
-                    <a href="#">Account & Billing</a>
-                    <a href="#">Plans & Pricing</a>
-                    <a href="#">Supported devices</a>
-                    <a href="#">Accessibility</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bottom-footer">
-              <small class="footer__copyright">
-                © FlixTVClone.template, 2022. Created by
-                <a href="#">Nam, Long, Binh</a>
-              </small>
-              <div class="footer__links">
-                <a href="#">Privacy policy</a>
-                <a href="#">Terms and conditions</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <!-- footer -->
+      <main-footer></main-footer>
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>

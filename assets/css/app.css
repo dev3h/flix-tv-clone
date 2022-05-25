@@ -2,8 +2,6 @@
 @import "_variables.css";
 @import "_global.css";
 @import "_typography.css";
-@import "_header.css";
-@import "_footer.css";
 @import "./home/_home-carousel.css";
 @import "./home/_catalog.css";
 @import "./home/_subscription.css";
