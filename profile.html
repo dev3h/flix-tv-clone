@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Profile</title>
-        <link rel="stylesheet" href="./assets/css/all.css" />
-        <link rel="stylesheet" href="./assets/css/app.css" />
-        <link rel="stylesheet" href="./assets/css/profile/main.css" />
-        <!-- import header and footer -->
-        <script src="./js/Header.js"></script>
-        <script src="./js/Footer.js"></script>
-      </head>
-      <body>
-        <main-header></main-header>
-        <div class="wrapper">
-            <div class="section-head">
-                <div class="section-head-content">
-                    <div class="user-profile">
-                        <div class="user-profile-left">
-                            <img style=" border-radius:50%; height: 121px;width: 121px;" src="./assets/images/profile/user.jpg">
-                        </div>
-                        <div class="user-profile-right">
-                            <h4>Manager Profile</h4>
-                            <div class="profile-form">
-                                <div class="form-name">
-                                    <label>Name</label>
-                                    <input placeholder="Enter your name" id="input1" type="text" >
-                                    <label>Date of Birth</label>
-                                    <input placeholder="Enter your name" id="input1" type="text" >
-                                    <select name="Gender">
-                                        <option>Male</option>
-                                        <option>Female</option>
-                                    </select>
-                                    <input placeholder="Language Preference" id="input3" type="text" >
-                                    <div class="button">
-                                    <button id="btn1"> <b>Save</b> </button>
-                                    <button id="btn2"> <b>Cancel</b> </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <!-- import header and footer -->
+    <script src="./js/Header.js"></script>
+    <script src="./js/Footer.js"></script>
+  </head>
+  <body>
+    <main-header></main-header>
+    <div class="wrapper">
+      <div class="section-head">
+        <div class="section-head-content">
+          <div class="user-profile">
+            <div class="user-profile-left">
+              <img
+                style="border-radius: 50%; height: 121px; width: 121px"
+                src="./assets/images/profile/user.jpg"
+              />
             </div>
+            <div class="user-profile-right">
+              <h4>Manager Profile</h4>
+              <div class="profile-form">
+                <div class="form-name">
+                  <label for="input1">Name</label>
+                  <input
+                    placeholder="Enter your name"
+                    id="input1"
+                    type="text"
+                  />
+                  <label for="input2">Date of Birth</label>
+                  <input
+                    placeholder="Enter your name"
+                    id="input2"
+                    type="text"
+                  />
+                  <select name="Gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                  <input
+                    placeholder="Language Preference"
+                    id="input3"
+                    type="text"
+                  />
+                  <div class="button">
+                    <button id="btn1"><b>Save</b></button>
+                    <button id="btn2"><b>Cancel</b></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </body>      
-      <main-footer></main-footer>
+      </div>
+    </div>
+  </body>
+  <main-footer></main-footer>
 </html>
