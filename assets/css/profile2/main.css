@@ -1,0 +1,91 @@
+.wrapper{
+    width: 100%;
+    background-color: #131720;
+    padding-top: 120px;
+}
+.container{
+    background-color: #131720;
+    width: 100%;
+    
+}
+.content{
+    background-color: #131720;
+    height: 890px;
+    width: 1170px;
+    color:#d1d0cf;
+    margin: auto;
+    text-align: left; 
+    justify-content: flex start;
+}
+.main-title{
+    
+    width: 1138px;
+    height: 34px;
+    color: white;
+    font-size: 29px;
+    text-align: left;
+    line-height: 34px;
+    margin: 0px 0px 24px;
+}
+.main-title h4{
+    font-size: 29px;
+    padding-left: 18px;
+    padding-bottom: 18px;
+}
+.user-card{
+    display: flex;
+    width: 359px;
+    height: 400px;
+    background-color: #191919;
+    box-shadow:#000000 0px 0px 20px 0px;
+    color:#d1d0cf;
+    line-height:24px;
+    margin-left: 18px;
+    text-align:center;
+    padding: 30px;
+}
+.user-card img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding-top: 0px;
+    margin: 0px 65px 16px;
+}
+.user-card a{
+    font-size: 21px;
+    width: 27px;
+    height: 24px;
+    color: red;
+    font-size: 21px;
+    text-align: center;
+    padding-right: 20px;
+}
+#user-name{
+    font-size: 29px;
+    width: 298px;
+    height: 34px;
+    position: absolute;
+    padding-top: 160px;
+    margin-left: -15px;
+}
+.user-card p{
+    position: absolute;
+    font-size: 15px;
+    width: 300px;
+    height: 106px;
+    padding-top: 200px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0px 0px 16px;
+}
+.user-infor{ 
+    width: 750px;
+    height: 830px;
+    background-color:#191919 ;
+    box-shadow: #000000 0px 0px 20px 0px;
+    color:#d1d0cf;
+    line-height:24px;
+    padding:30px;
+    text-align:left;
+    position: relative;
+}
