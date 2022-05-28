@@ -1,12 +1,9 @@
-.wrapper{
-    width: 100%;
-    background-color: #131720;
-    padding-top: 120px;
-}
-.container{
-    background-color: #131720;
-    width: 100%;   
-}
+/* base */
+@import "../base/_reset.css";
+@import "../base/_variables.css";
+@import "../base/_typography.css";
+@import "../base/_global.css";
+/* setting profile */
 .content{
     background-color: #131720;
     height: 890px;
@@ -169,11 +166,11 @@
     float: right;
     margin-top: -107px;
 }
-.plan{
+/* .plan{
     width: 480px;
     height: 43px;
     flex-basis: 66.6667%;  
-}
+} */
 .plan-change {
     width: 240px;
     float: right;

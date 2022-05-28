@@ -1,8 +1,9 @@
-.wrapper {
-  width: 100%;
-  background-color: #131720;
-  padding-top: 120px;
-}
+/* base */
+@import "../base/_reset.css";
+@import "../base/_variables.css";
+@import "../base/_typography.css";
+@import "../base/_global.css";
+/* profile */
 .section-head-content {
   width: 100%;
   height: 747px;
