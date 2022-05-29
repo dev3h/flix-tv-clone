@@ -106,18 +106,18 @@ input[type="radio"] {
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .form-inner form .field {
-  height: 50px;
   width: 100%;
-  margin-top: 20px;
+  height: 5rem;
+  margin-top: 2rem;
 }
 .form-inner form .field input {
-  height: 100%;
   width: 100%;
+  height: 100%;
   outline: none;
-  padding-left: 15px;
-  border-radius: 5px;
+  padding-left: 1.5rem;
+  border-radius: 0.5rem;
   border: 1px solid lightgrey;
-  border-bottom-width: 2px;
+  border-bottom-width: 0.2rem;
   font-size: 17px;
   transition: all 0.3s ease;
 }
@@ -139,13 +139,11 @@ form .field input:focus::placeholder {
   text-align: center;
   margin-top: 30px;
 }
-.form-inner form .pass-link a,
-.form-inner form .signup-link a {
+.form-inner form :is(.pass-link, .signup-link) a {
   color: #fa4299;
   text-decoration: none;
 }
-.form-inner form .pass-link a:hover,
-.form-inner form .signup-link a:hover {
+.form-inner form :is(.pass-link, .signup-link) a:hover {
   text-decoration: underline;
 }
 form .btn {
@@ -167,23 +165,23 @@ form .btn .btn-layer {
     #a445b2,
     #fa4299
   );
-  border-radius: 5px;
+  border-radius: 0.5rem;
   transition: all 0.4s ease;
 }
 form .btn:hover .btn-layer {
   left: 0;
 }
 form .btn input[type="submit"] {
-  height: 100%;
-  width: 100%;
-  z-index: 1;
   position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   background: none;
   border: none;
   color: #fff;
   padding-left: 0;
-  border-radius: 5px;
-  font-size: 20px;
+  border-radius: 0.5rem;
+  font-size: 2rem;
   font-weight: 500;
   cursor: pointer;
 }

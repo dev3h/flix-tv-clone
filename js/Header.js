@@ -138,6 +138,9 @@ class Header extends HTMLElement {
         font-size: 1.4rem;
         line-height: 2.4rem;
       }
+      #header__form-input::placeholder {
+        color: #ddd;
+      }
       .header__search {
         position: absolute;
         right: 10%;

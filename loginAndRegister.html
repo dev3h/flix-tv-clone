@@ -25,17 +25,17 @@
         <div class="form-inner">
           <form action="#" class="login">
             <div class="field">
-              <input type="text" placeholder="Email Address" required />
+              <input type="email" id="emailLogin" placeholder="Email Address" required />
             </div>
             <div class="field">
-              <input type="password" placeholder="Password" required />
+              <input type="password" id="pswLogin" placeholder="Password" required />
             </div>
             <div class="pass-link">
               <a href="#">Forgot password?</a>
             </div>
             <div class="field btn">
               <div class="btn-layer"></div>
-              <input type="submit" value="Login" />
+              <input type="submit" value="Login" onclick="checkAccount();"/>
             </div>
             <div class="signup-link">
               Not a member? <a href="">Signup now</a>
@@ -43,17 +43,20 @@
           </form>
           <form action="#" class="signup">
             <div class="field">
-              <input type="text" placeholder="Email Address" required />
+              <input type="text" id="userNameSignup" placeholder="user" required />
             </div>
             <div class="field">
-              <input type="password" placeholder="Password" required />
+              <input type="mail" id="emailSignup" placeholder="Email Address" required />
             </div>
             <div class="field">
-              <input type="password" placeholder="Confirm password" required />
+              <input type="password" id="pswSignup" placeholder="Password" required />
+            </div>
+            <div class="field">
+              <input type="password" id="pswConfirmSignup" placeholder="Confirm password" required />
             </div>
             <div class="field btn">
               <div class="btn-layer"></div>
-              <input type="submit" value="Signup" />
+              <input type="submit" value="Signup" onclick="saveData();"/>
             </div>
           </form>
         </div>
@@ -62,21 +65,23 @@
     <script>
       const loginText = document.querySelector(".title-text .login");
       const loginForm = document.querySelector("form.login");
-      const loginBtn = document.querySelector("label.login");
-      const signupBtn = document.querySelector("label.signup");
+      const loginLabel = document.querySelector("label.login");
+      const signupLabel = document.querySelector("label.signup");
       const signupLink = document.querySelector("form .signup-link a");
-      signupBtn.onclick = () => {
+      signupLabel.onclick = () => {
         loginForm.style.marginLeft = "-50%";
         loginText.style.marginLeft = "-50%";
       };
-      loginBtn.onclick = () => {
+      loginLabel.onclick = () => {
         loginForm.style.marginLeft = "0%";
         loginText.style.marginLeft = "0%";
       };
       signupLink.onclick = () => {
-        signupBtn.click();
+        signupLabel.click();
         return false;
       };
     </script>
+    <script src="./js/register.js"></script>
+    <script src="./js/login.js"></script>
   </body>
 </html>
