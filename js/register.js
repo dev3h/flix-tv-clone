@@ -32,6 +32,8 @@ function saveData() {
         document.getElementById("emailSignup").value = "";
         document.getElementById("pswSignup").value = "";
         document.getElementById("pswConfirmSignup").value = "";
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
       }
     }
   }
