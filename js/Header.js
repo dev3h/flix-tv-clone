@@ -175,20 +175,20 @@ class Header extends HTMLElement {
       .sub-dropdown.show {
         display: block;
       }
-      .sub-dropdown .sub-dropdown__item a {
-        display: inline-block;
-        padding: 1.5rem;
+      .sub-dropdown .sub-dropdown__item :is(button, a){
         display: flex;
         align-items: center;
         gap: 2rem;
+        padding: 1.5rem;
         color: #fff;
       }
-      .sub-dropdown .sub-dropdown__item a i {
+      .sub-dropdown .sub-dropdown__item :is(button, a) i{
         color: var(--pri-color);
         font-size: 1.8rem;
       }
-      .sub-dropdown .sub-dropdown__item a span {
+      .sub-dropdown .sub-dropdown__item :is(button, a) span {
         display: inline-block;
+        font-size: 1.6rem;
         text-transform: capitalize;
       }
     </style>
@@ -250,7 +250,7 @@ class Header extends HTMLElement {
               <ul class="dropdown-menu">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Interview</a></li>
+                <li><a href="../landingPage.html">Landing page</a></li>
               </ul>
             </a>
           </li>
@@ -289,10 +289,10 @@ class Header extends HTMLElement {
                 </a>
               </li>
               <li class="sub-dropdown__item">
-                <a href="">
+                <button class="logout">
                   <i class="fal fa-sign-out-alt"></i>
                   <span>logout</span>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -303,16 +303,29 @@ class Header extends HTMLElement {
       `;
     const header = document.querySelector(".header");
     const headerUser = document.querySelector(".header__user");
-    const headerUserDropDown = document.querySelector(".header__user .sub-dropdown");
+    const headerUserDropDown = document.querySelector(
+      ".header__user .sub-dropdown"
+    );
     headerUser.onclick = () => {
       headerUserDropDown.classList.toggle("show");
-    }
+    };
     window.onscroll = () => {
       if (window.scrollY >= 100) {
         header.style.boxShadow = "0 0 0.5rem #151f30, 0 0.5rem 1rem #151f30";
       } else {
         header.style.boxShadow = "unset";
       }
+    };
+    const logoutBtn = document.querySelector(".logout");
+    console.log(logoutBtn);
+    let name = localStorage.getItem("name") ? localStorage.getItem("name") : "";
+    if (name === "") {
+      window.location.href = "/loginAndRegister.html";
+    }
+    logoutBtn.onclick = () => {
+      localStorage.removeItem("name");
+      localStorage.removeItem("email");
+      window.location.href = "/loginAndRegister.html";
     };
   }
 }

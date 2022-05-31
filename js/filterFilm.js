@@ -14,7 +14,7 @@ Array.from(filmRadio).forEach((element) => {
   });
 });
 filmSelect.addEventListener("change", filmFilter);
-export default function filmFilter() {
+function filmFilter() {
   let name_filter = filmOptions[filmSelect.selectedIndex].dataset.filter;
 
   Array.from(filmCard).forEach(function (element) {

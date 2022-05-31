@@ -62,6 +62,9 @@ body {
 .slide-controls label.signup {
   color: #000;
 }
+.slide-controls label:is(.signup, .login) {
+  user-select: none;
+}
 .slide-controls .slider-tab {
   position: absolute;
   left: 0;

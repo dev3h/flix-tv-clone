@@ -40,7 +40,7 @@
                 <div class="email">
                   <div class="email-left">
                     <span style="color: white">Email</span>
-                    <p><script>document.write(localStorage.getItem('email'));</script></p>
+                    <p><script>document.write(atob(localStorage.getItem('email')));</script></p>
                   </div>
                   <div class="email-right">
                     <a href="#" style="color: red">Change</a>

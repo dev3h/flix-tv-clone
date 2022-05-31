@@ -1,9 +1,9 @@
 let email, psw, confirmPsw, username;
 function saveData() {
   username = document.getElementById("userNameSignup").value;
-  email = document.getElementById("emailSignup").value;
-  psw = document.getElementById("pswSignup").value;
-  confirmPsw = document.getElementById("pswConfirmSignup").value;
+  email = btoa(document.getElementById("emailSignup").value);
+  psw = btoa(document.getElementById("pswSignup").value);
+  confirmPsw = btoa(document.getElementById("pswConfirmSignup").value);
   if (username !== "" && psw !== "" && confirmPsw !== "") {
     if (psw !== confirmPsw) {
       alert("Password not match");
@@ -34,6 +34,7 @@ function saveData() {
         document.getElementById("pswConfirmSignup").value = "";
         loginForm.style.marginLeft = "0%";
         loginText.style.marginLeft = "0%";
+        loginTab.checked = true;
       }
     }
   }

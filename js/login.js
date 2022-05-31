@@ -1,7 +1,6 @@
 let name = localStorage.getItem("name") ? localStorage.getItem("name") : "";
-if (name != "") {
-  alert("Please visit profile");
-  window.location.href = "/profile.html";
+if (name !== "") {
+  window.location.href = "/index.html";
 }
 function checkAccount() {
   let email, psw;
@@ -14,16 +13,17 @@ function checkAccount() {
       : [];
     if (
       user_records.some((v) => {
-        return v.email == email && v.psw == psw;
+        return atob(v.email) === email && atob(v.psw) === psw;
       })
     ) {
       alert("Login Pass");
       let current_user = user_records.filter((v) => {
-        return v.email === email && v.psw === psw;
+        return atob(v.email) === email && atob(v.psw) === psw;
       })[0];
       localStorage.setItem("name", current_user.username);
       localStorage.setItem("email", current_user.email);
-      window.location.href = "/profile.html";
+      localStorage.setItem("password", current_user.psw);
+      window.location.href = "/index.html";
     } else {
       alert("Login Fail");
     }
