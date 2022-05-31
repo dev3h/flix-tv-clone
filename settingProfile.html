@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Information</title>
+    <link
+      rel="stylesheet"
+      href="./assets/css/settingProfile/_settingProfile.css"
+    />
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <!-- import header and footer -->
+    <script src="./js/Header.js"></script>
+    <script src="./js/Footer.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main-header></main-header>
+      <div class="main">
+        <div class="container">
+          <div class="content">
+            <h4 class="main-title">Account Setting</h4>
+            <div class="setting__wrapper">
+              <div class="user-card">
+                <img src="./assets/images/profile/user.jpg" />
+                <a href="#">Edit</a>
+                <div id="user-name">
+                  <h4><script>document.write(localStorage.getItem('name'));</script></h4>
+                </div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s
+                </p>
+              </div>
+              <div class="user-infor">
+                <h5>Personal Details</h5>
+                <div class="email">
+                  <div class="email-left">
+                    <span style="color: white">Email</span>
+                    <p><script>document.write(localStorage.getItem('email'));</script></p>
+                  </div>
+                  <div class="email-right">
+                    <a href="#" style="color: red">Change</a>
+                  </div>
+                </div>
+                <div class="email">
+                  <div class="email-left">
+                    <span style="color: white">Password</span>
+                    <p>**********</p>
+                  </div>
+                  <div class="email-right">
+                    <a href="#" style="color: red">Change</a>
+                  </div>
+                </div>
+                <div class="email">
+                  <div class="email-left">
+                    <span style="color: white">Date of birth</span>
+                    <p>08-03-1995</p>
+                  </div>
+                  <div class="email-right">
+                    <a href="#" style="color: red">Change</a>
+                  </div>
+                </div>
+                <div class="email">
+                  <div class="email-left">
+                    <span style="color: white">Language</span>
+                    <p>English</p>
+                  </div>
+                  <div class="email-right">
+                    <a href="#" style="color: red">Change</a>
+                  </div>
+                </div>
+                <h5 id="bill">Billing Details</h5>
+                <div class="cancel-bill">
+                  <p style="margin-bottom: 16px">
+                    Your next billing date is 19 September 2020.
+                  </p>
+                  <a id="cancelbill" href="#" class="btn-sample"
+                    ><b>Cancel Membership</b></a
+                  >
+                </div>
+                <div class="update-payment">
+                  <a style="color: red">Update payment info</a>
+                </div>
+                <h5>Plan Details</h5>
+                <div class="plan">
+                  <p>Premium</p>
+                </div>
+                <div class="plan-change">
+                  <a href="#" style="color: red">Change Plan</a>
+                </div>
+                <div class="settting">
+                  <p>Setting</p>
+                  <hr />
+                  <div class="setting2">
+                    <a href="#" style="color: white"
+                      >Recent device streaming activity</a
+                    ><br />
+                    <a href="#" style="color: white">Sign out of all devices</a
+                    ><br />
+                    <a href="#" style="color: white"
+                      >Download your person information</a
+                    >
+                    <!-- changed -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main-footer></main-footer>
+    </div>
+  </body>
+</html>

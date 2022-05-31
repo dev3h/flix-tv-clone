@@ -1,34 +1,42 @@
-.wrapper{
-    width: 100%;
-    background-color: #131720;
-    padding-top: 120px;
-}
-.container{
-    background-color: #131720;
-    width: 100%;   
+/* base */
+@import "../base/_reset.css";
+@import "../base/_variables.css";
+@import "../base/_typography.css";
+@import "../base/_global.css";
+/* setting profile */
+.main {
+    margin-top: 10rem;
+    background: var(--bg-color);
 }
 .content{
-    background-color: #131720;
-    height: 890px;
     width: 1170px;
+    height: 890px;
+    margin: 0 auto;
+    /* background-color: #131720; */
     color:#d1d0cf;
-    margin: auto;
     text-align: left; 
     /* justify-content: flex start; */
 }
 .main-title{  
+    display: flex;
+    align-items: center;
     width: 1138px;
     height: 34px;
     color: white;
     font-size: 29px;
     text-align: left;
     line-height: 34px;
-    margin: 0px 0px 24px;
+    padding: 2rem 0;
 }
 .main-title h4{
     font-size: 29px;
     padding-left: 18px;
     padding-bottom: 18px;
+}
+.setting__wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 .user-card{
     display: flex;
@@ -38,19 +46,17 @@
     box-shadow:#000000 0px 0px 20px 0px;
     color:#d1d0cf;
     line-height:24px;
-    margin-left: 18px;
     text-align:center;
     padding: 30px;
 }
 .user-card img{
-    height: 150px;
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     padding-top: 0px;
     margin: 0px 65px 16px;
 }
 .user-card a{
-    font-size: 21px;
     width: 27px;
     height: 24px;
     color: red;
@@ -80,16 +86,11 @@
 }
 .user-infor{ 
     width: 750px;
-    height: 830px;
     background-color:#191919 ;
     box-shadow: #000000 0px 0px 20px 0px;
     color:#d1d0cf;
     line-height:24px;
     padding: 30px;
-    float: right;
-    position: relative;
-    left: -14px;
-    top: -401px;  
 }
 .user-infor h5{
     display: block;
@@ -149,11 +150,8 @@
     margin-bottom: 20px;
 }
 #cancelbill{
-    border-style:solid;
-    border-width:1px;
-    box-shadow:#000000 0px 0px 1.008px 0px;
-    color:#ffffff;
-    display:inline-block;
+    display: block;
+    width: fit-content;
     line-height:24px;
     padding:9.008px 30px;
     text-align:center;
@@ -169,11 +167,11 @@
     float: right;
     margin-top: -107px;
 }
-.plan{
+/* .plan{
     width: 480px;
     height: 43px;
     flex-basis: 66.6667%;  
-}
+} */
 .plan-change {
     width: 240px;
     float: right;

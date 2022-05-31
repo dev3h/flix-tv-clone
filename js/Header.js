@@ -11,6 +11,7 @@ class Header extends HTMLElement {
         width: 100%;
         border-bottom: 1px solid transparent;
         background: var(--bg-color);
+        transition: 0.3s ease-in-out;
       }
       .header-main {
         position: relative;
@@ -116,6 +117,7 @@ class Header extends HTMLElement {
       .header__action {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 38.3rem;
         height: 100%;
       }
@@ -138,6 +140,9 @@ class Header extends HTMLElement {
         font-size: 1.4rem;
         line-height: 2.4rem;
       }
+      #header__form-input::placeholder {
+        color: #ddd;
+      }
       .header__search {
         position: absolute;
         right: 10%;
@@ -149,17 +154,42 @@ class Header extends HTMLElement {
         color: #fff;
       }
       .header__user {
+        position: relative;
+      }
+      .header__user img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .header__user .sub-dropdown {
+        position: absolute;
+        top: 5rem;
+        right: 8%;
+        padding: 0 1.6rem;
+        display: none;
+        width: 30rem;
+        background: linear-gradient(var(--bg-color), var(--bg-shape));
+        box-shadow: 0 0 0.5rem #333;
+      }
+      .sub-dropdown.show {
+        display: block;
+      }
+      .sub-dropdown .sub-dropdown__item a {
+        display: inline-block;
+        padding: 1.5rem;
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 2rem;
+        color: #fff;
       }
-      .header__user span {
-        color: var(--white-color);
-        font-size: 1.4rem;
-      }
-      .header__user i {
+      .sub-dropdown .sub-dropdown__item a i {
         color: var(--pri-color);
-        font-size: 2rem;
+        font-size: 1.8rem;
+      }
+      .sub-dropdown .sub-dropdown__item a span {
+        display: inline-block;
+        text-transform: capitalize;
       }
     </style>
     <header class="header">
@@ -175,18 +205,6 @@ class Header extends HTMLElement {
           <li class="header-menu__item">
             <a href="./index.html">
               Home
-              <span class="circle"></span>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Home style 1</a>
-                </li>
-                <li>
-                  <a href="#">Home style 2</a>
-                </li>
-                <li>
-                  <a href="#">Home style 3</a>
-                </li>
-              </ul>
             </a>
           </li>
           <!-- Catalog -->
@@ -213,9 +231,6 @@ class Header extends HTMLElement {
                 </li>
                 <li><a href="#">Category style 1</a></li>
                 <li><a href="#">Category style 2</a></li>
-                <li><a href="#">Details style 3</a></li>
-                <li><a href="#">Details style 4</a></li>
-                <li><a href="#">Details style 5</a></li>
               </ul>
             </a>
           </li>
@@ -234,15 +249,8 @@ class Header extends HTMLElement {
               <i class="fal fa-ellipsis-h"></i>
               <ul class="dropdown-menu">
                 <li><a href="#">About us</a></li>
-                <li><a href="#">Profile</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Interview</a></li>
-                <li><a href="#">Admin pages</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Sign in</a></li>
-                <li><a href="#">Sign up</a></li>
-                <li><a href="#">Forgot password</a></li>
-                <li><a href="#">404 Page</a></li>
               </ul>
             </a>
           </li>
@@ -259,15 +267,53 @@ class Header extends HTMLElement {
               <i class="fal fa-search"></i>
             </label>
           </form>
-          <a href="#" class="header__user">
-            <span>Sign in</span>
-            <i class="fad fa-sign-in"></i>
-          </a>
+          <div class="header__user">
+            <img src="../assets/images/profile/user.jpg" alt="user" />
+            <ul class="sub-dropdown">
+              <li class="sub-dropdown__item">
+                <a href="../profile.html">
+                  <i class="far fa-file-user"></i>
+                  <span>manage profile</span>
+                </a>
+              </li>
+              <li class="sub-dropdown__item">
+                <a href="../settingProfile.html">
+                  <i class="fal fa-cog"></i>
+                  <span>settings</span>
+                </a>
+              </li>
+              <li class="sub-dropdown__item">
+                <a href="">
+                  <i class="fal fa-cog"></i>
+                  <span>pricing plan</span>
+                </a>
+              </li>
+              <li class="sub-dropdown__item">
+                <a href="">
+                  <i class="fal fa-sign-out-alt"></i>
+                  <span>logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </header>
       `;
+    const header = document.querySelector(".header");
+    const headerUser = document.querySelector(".header__user");
+    const headerUserDropDown = document.querySelector(".header__user .sub-dropdown");
+    headerUser.onclick = () => {
+      headerUserDropDown.classList.toggle("show");
+    }
+    window.onscroll = () => {
+      if (window.scrollY >= 100) {
+        header.style.boxShadow = "0 0 0.5rem #151f30, 0 0.5rem 1rem #151f30";
+      } else {
+        header.style.boxShadow = "unset";
+      }
+    };
   }
 }
 customElements.define("main-header", Header);
