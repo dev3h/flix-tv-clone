@@ -235,7 +235,7 @@ class Header extends HTMLElement {
             </a>
           </li>
           <!-- Pricing plans -->
-          <li class="header-menu__item"><a href="#">Pricing plans</a></li>
+          <li class="header-menu__item"><a href="../pricingPlan.html">Pricing plans</a></li>
           <!-- Live -->
           <li class="header-menu__item">
             <a href="#">
@@ -283,7 +283,7 @@ class Header extends HTMLElement {
                 </a>
               </li>
               <li class="sub-dropdown__item">
-                <a href="">
+                <a href="../pricingPlan.html">
                   <i class="fal fa-cog"></i>
                   <span>pricing plan</span>
                 </a>

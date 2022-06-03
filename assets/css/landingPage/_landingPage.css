@@ -12,7 +12,6 @@
 /* banner */
 .banner {
   margin-top: 10rem;
-  background: tomato;
 }
 .banner-wrapper {
   padding-top: 10rem;
@@ -36,7 +35,6 @@
 /* feature */
 .feature {
   padding: 10rem 0;
-  background: lightgreen;
 }
 .feature__content {
   width: 56.9rem;
@@ -125,7 +123,6 @@
 /* download */
 .download {
   padding: 10rem 0 5rem;
-  background: lightcoral;
 }
 .download-wrapper {
   display: flex;
@@ -225,20 +222,36 @@
   font-size: 2rem;
 }
 /* question */
+.question {
+  padding: 10rem 0;
+}
+.question-wrapper {
+  width: 76.9rem;
+  margin: 0 auto;
+}
+.question h2 {
+  font-size: 4.6rem;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.accordion__item {
+  margin-bottom: 1.5rem;
+}
 .accordion {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 2rem 3rem;
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+  font-size: 1.8rem;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
 }
-
-.active,
+.accordion.active,
 .accordion:hover {
   background-color: #ccc;
 }
@@ -249,15 +262,18 @@
   float: right;
   margin-left: 5px;
 }
-
-.active:after {
+.accordion.active:after {
   content: "\2212";
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
+  background-color: #ccc;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: all 0.3s ease-in-out;
 }
+.panel p {
+  height: 100%;
+  padding: 3rem;
+}
+
