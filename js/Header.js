@@ -213,7 +213,7 @@ class Header extends HTMLElement {
               Catalog
               <span class="circle"></span>
               <ul class="dropdown-menu">
-                <li><a href="#">Catalog</a></li>
+                <li><a href="../catalog.html">Catalog</a></li>
                 <li>
                   <a href="#">
                     Catalog dropdown
@@ -248,7 +248,7 @@ class Header extends HTMLElement {
             <a href="#" class="menu-link--more">
               <i class="fal fa-ellipsis-h"></i>
               <ul class="dropdown-menu">
-                <li><a href="#">About us</a></li>
+                <li><a href="../aboutUs.html">About us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="../landingPage.html">Landing page</a></li>
               </ul>
