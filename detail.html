@@ -5,134 +5,468 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
+    <title>Film Details </title>
     <link rel="stylesheet" href="./assets/css/all.css" />
-    <link rel="stylesheet" href="./assets/css/app.css" />
-    <!-- import header and footer -->
+    <link rel="stylesheet" href="./assets/css/home/home.css" />
+    <link rel="stylesheet" href="./assets/css/details/details.css"> <!-- import header and footer -->
     <script src="./js/Header.js"></script>
     <script src="./js/Footer.js"></script>
-    <link rel="stylesheet" href="./assets/detail/detail.css">
 </head>
 
 <body>
-    <main-header></main-header>
+    <style>
+    .movies-wrapper img{
+        display:block;
+        transition: all .3s ease;       
+    }
+    .movies-wrapper img:hover{
+        transform: scale(1.3); /* cỡ zoom khi di chuột vào */
+    } 
+    .movies-wrapper a{
+        display:block;
+	overflow: hidden;
+    }
+    .season img{
+        display:block;
+        transition: all .3s ease;       
+    }
+    .season img:hover{
+        transform: scale(1.3); /* cỡ zoom khi di chuột vào */
+    } 
+    .season a{
+        display:block;
+	overflow: hidden;
+    }
+    .actor img{
+        display:block;
+        transition: all .3s ease;       
+    }
+    .actor img:hover{
+        transform: scale(1.3); /* cỡ zoom khi di chuột vào */
+    } 
+    .actor a{
+        display:block;
+	    overflow: hidden;
+    }
+    </style>
     <div class="wrapper">
-        <div class="content">
-            <div class="section-head">
-                <h1>FlixTV - Best place for movies</h1>
-                <div class="item">
-                    <a style="float: right; padding-right: 12px" href="#">Home </a>
-                    <p style="letter-spacing:12px">→</p>
-                    <a style="float: right; display: flex;" href="#">Contact</a>
-                </div>
-            </div>
-            
-            <div section2>
-                <div id="paragraph">
-                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
-                        text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-                        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
-                        humour and the like).</p><br>
-                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-                        making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
-                        words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
-                        reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour,
-                        or non-characteristic words etc.</p>
-                </div>
-                <div class="step-content">
-                    <div class="step">
-                        <div class="step1">
-                            <span>01</span>
-                            <h3>Choose your plan</h3><br>
-                            <p>It to make a type specimen book. It has survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step1">
-                            <span>02</span>
-                            <h3>Choose your plan</h3><br>
-                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step1">
-                            <span>03</span>
-                            <h3>Choose your plan</h3><br>
-                            <p>It to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
-                        </div>
+        <main-header></main-header>
+        <div class="wallaper">
+            <div class="info-wrapper">
+                <div class="info">
+                    <div class="info1">
+                        <a href="#" id="playtrailer"><span><i class="fal fa-play-circle"></i></span>Trailer</a>
+                        <h1>Pirates of the Caribbean: Dead Men Tell No Tales</h1>
+                        <ul id="list">
+                            <li><span><i class="far fa-star"></i></span>9.9</li>
+                            <li><span style="font-size: 10px"><i class="fas fa-circle"></i></i></span>Action</li>
+                            <li><span style="font-size: 10px"><i class="fas fa-circle"></i></span>2020</li>
+                            <li><span style="font-size: 10px"><i class="fas fa-circle"></i></span>1 h 50 mins</li>
+                            <li><span style="font-size: 10px"><i class="fas fa-circle"></i></span>16+</li>
+                        </ul>
+                        <p>Captain Jack Sparrow is pursued by old rival Captain Salazar and a crew of deadly ghosts who
+                            have escaped from the Devil's Triangle. They're determined to kill every pirate at
+                            sea...notably Jack</p>
                     </div>
                 </div>
-            </div>
-            <div class="section3">
-                <h2>Subscribe features</h2>
-                <div class="section3-content">
-                    <div class="plan">
-                        <div class="plan1">
-                            <i class="fa-regular fa-folder"></i>
-                            <h3>Choose your plan</h3>
-                            <p>It to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining</p>
-                        </div>
-                    </div>
-                    <div class="plan">
-                        <div class="plan1">
-                            <i class="fa-regular fa-folder"></i>
-                            <h3>Choose your plan</h3>
-                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
-                        </div>
-                    </div>
-                    <div class="plan">
-                        <div class="plan1">
-                            <i class="fa-regular fa-folder"></i>
-                            <h3>Choose your plan</h3>
-                            <p>t to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially</p>
-                        </div>
-                    </div>
-                    <div class="plan">
-                        <div class="plan1">
-                            <i class="fa-regular fa-folder"></i>
-                            <h3>Choose your plan</h3>
-                            <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="section3-content">
-                    <div class="plan">
-                        <div class="plan1">
-                            <i class="fa-regular fa-folder"></i>
-                            <h3>Choose your plan</h3>
-                            <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
-                        </div>
-                    </div>
-                    <div class="plan">
-                        <div class="plan1">
-                            <i class="fa-regular fa-folder"></i>
-                            <h3>Choose your plan</h3>
-                            <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
-                        </div>
-                    </div>
-                    <div class="plan">
-                        <div class="plan1">
-                            <i class="fa-regular fa-folder"></i>
-                            <h3>Choose your plan</h3>
-                            <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
-                        </div>
-                    </div>
-                    <div class="plan">
-                        <div class="plan1">
-                            <i class="fa-regular fa-folder"></i>
-                            <h3>Choose your plan</h3>
-                            <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section4">
-
             </div>
         </div>
+        <div class="video-wrapper">
+            <div class="video">
+                <div class="video1">
+                    <video style="border-radius: 0%;" control autoplay>
+                        <source src="./assets/images/details/PIRATES OF THE CARIBBEAN 5 Trailer 1 + 2 (2017).mp4">
+                    </video>
+                </div>
+                <div class="dowload">
+                    <div class="dowload1">
+                        <a href="#"></a><span style="color: #2f80ed; font-size:20px"><i
+                                class="far fa-arrow-to-bottom"></i></span><a href="#">Dowload</a>
+                        <a>480p</a>
+                        <a>720p</a>
+                        <a>1080p</a>
+                        <a>4K</a>
+                        <a>8K</a>
+                    </div>
+                    <div class="dowload2">
+
+                        <span style="color: #2f80ed; font-size:20px; margin-right:15px"><i
+                                class="far fa-bookmark"></i></span>
+                        <button style="font-size: 25x; color: white">Add to farvorite</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other-wrapper">
+            <div class="other">
+                <h3><i class="far fa-skull-crossbones"></i>Other Season </h3>
+                <div class="season">
+                    <div class="season1">
+                        <div class="season1-1">
+                            <a href="#"><img src="./assets/images/details/1.jpg"></a>
+                            <a href="#">The Curse of the Black Pearl</a>
+                        </div>
+                        <div class="season1-1">
+                            <a href="#"><img src="./assets/images/details/2.jpg"></a>
+                            <a href="#">Dead Man's Chest</a>
+                        </div>
+                        <div class="season1-1">
+                            <a href="#"><img src="./assets/images/details/3.jpg"></a>
+                            <a href="#">At World's End</a>
+                        </div>
+                        <div class="season1-1">
+                            <a href="#"><img src="./assets/images/details/4.jpg"></a>
+                            <a href="#">On Stranger Tides</a>
+                        </div>
+                        <div class="season1-1">
+                            <a href="#"><img src="./assets/images/details/5.jpg"></a>
+                            <a href="#"> Dead Men Tell No Tales</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actor-wrapper">
+            <div class="actor0">
+                <h2><span><i class="far fa-user"></i></span>Actor</h2>
+            </div>
+            <div class="actor">
+                <div class="actor1">
+                    <a href="#"><img src="./assets/images/details/a.jpg"></a>
+                    <a style="font-size: 18px;margin-left: 30px;">Johny Deep</a>
+                </div>
+                <div class="actor1">
+                    <a href="#"><img src="./assets/images/details/b.jpg"></a>
+                    <a style="font-size: 18px;margin-left: 20px;">Geoffrey Rush</a>
+                </div>
+                <div class="actor1">
+                    <a href="#"><img src="./assets/images/details/c.jpg"></a>
+                    <a style="font-size: 18px;margin-left: 30px;">Orlando Bloom</a>
+                </div>
+                <div class="actor1">
+                    <a href="#"><img src="./assets/images/details/e.jpg"></a>
+                    <a style="font-size: 18px;margin-left: 30px;">Lee Arenberg</a>
+                </div>
+                <div class="actor1">
+                    <a href="#"><img src="./assets/images/details/f.jpg"></a>
+                    <a style="font-size: 18px;margin-left: 10px;">Mackenzie Crook</a>
+                </div>
+            </div>
+        </div>
+        <div class="gernes-wrapper">
+            <div class="gernes">
+                <h3>Gernes</3>
+                    <div class="gernes1">
+                        <a href="#">Action</a>
+                        <a href="#">Fanasty </a>
+                        <a href="#">Comedy</a>
+                        <a href="#">Drama</a>
+                        <a href="#">Horror</a>
+                        <a href="#">16+</a>
+                    </div>
+            </div>
+        </div>
+        <div class="share-wrapper">
+            <div class="share">
+                <h3>Share</h3>
+                <div class="share1">
+                    <a href="#"><i style="color:#385898" class="fab fa-facebook"></i>Facebook</a>
+                    <a href="#"><i style="color: red" class="fab fa-youtube"></i>Youtube </a>
+                    <a href="#"><i style="color: #1d9bf0" class="fab fa-twitter"></i>Twitter</a>
+                    <a href="#"><i style="color: black" class="fab fa-tiktok"></i>Tiktok</a>
+                    <a href="#"><i style="color: #ffff" class="fab fa-discord"></i>Discord</a>
+                </div>
+            </div>
+        </div>
+        <div id="flex">
+            <div class="cmt-sub">
+                <div class="cmt">
+                    <div class="cmt1">
+                        <ul class="cmt-rv">
+                            <li><a href="#">Comments</a><span>7</span></li>
+                            <li><a href="#">Reviews</a><span>5</span></li>
+                        </ul>
+                        <ul class="comment">
+                            <li class="comment-item">
+                                <div class="comment-author">
+                                    <span><i class="far fa-user-alt"></i></span>
+                                    <div class="author">
+                                        <a>John Wick</a>
+                                        <br>
+                                        <p>30.08.2021, 17:53</p>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't look even slightly believable. If you are going to use a passage of Lorem
+                                        Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                                        middle of
+                                        text.</P>
+                                    </p>
+                                </div>
+                                <div class="action">
+                                    <div class="action1">
+                                        <button><i style="font-size: 15px; color: green;margin-right: 7px"
+                                                class="fas fa-arrow-alt-up"></i>17</button>
+                                        <button><i style="font-size: 15px; color: red;margin-right: 7px"
+                                                class="fas fa-arrow-alt-down"></i>17</button>
+                                    </div>
+                                    <div class="action2">
+                                        <button><i style="font-size: 15px; color: #2f80ed;margin-right: 7px"
+                                                class="fas fa-reply"></i>Reply</button>
+                                        <button><i style="font-size: 15px; color: #2f80ed;margin-right: 7px"
+                                                class="fas fa-repeat"></i></i>Quote</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="comment-item">
+                                <div class="comment-author">
+                                    <span><i class="far fa-user-alt"></i></span>
+                                    <div class="author">
+                                        <a>The Watcher</a>
+                                        <br>
+                                        <p>20.09.2022, 17:12</p>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                        with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                        recently with desktop publishing software like Aldus PageMaker including
+                                        versions of Lorem Ipsum.</P>
+                                    </p>
+                                </div>
+                                <div class="action">
+                                    <div class="action1">
+                                        <button><i style="font-size: 15px; color: green;margin-right: 7px"
+                                                class="fas fa-arrow-alt-up"></i>2</button>
+                                        <button><i style="font-size: 15px; color: red;margin-right: 7px"
+                                                class="fas fa-arrow-alt-down"></i>13</button>
+                                    </div>
+                                    <div class="action2">
+                                        <button><i style="font-size: 15px; color: #2f80ed;margin-right: 7px"
+                                                class="fas fa-reply"></i>Reply</button>
+                                        <button><i style="font-size: 15px; color: #2f80ed;margin-right: 7px"
+                                                class="fas fa-repeat"></i></i>Quote</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment-item">
+                                <div class="comment-author">
+                                    <span><i class="far fa-user-alt"></i></span>
+                                    <div class="author">
+                                        <a>Jack Sparrow</a>
+                                        <br>
+                                        <p>02.06.2022, 4:52</p>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                                        with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                        recently with desktop publishing software like Aldus PageMaker including
+                                        versions of Lorem Ipsum.</P>
+                                    </p>
+                                </div>
+                                <div class="action">
+                                    <div class="action1">
+                                        <button><i style="font-size: 15px; color: green;margin-right: 7px"
+                                                class="fas fa-arrow-alt-up"></i>23</button>
+                                        <button><i style="font-size: 15px; color: red;margin-right: 7px"
+                                                class="fas fa-arrow-alt-down"></i>43</button>
+                                    </div>
+                                    <div class="action2">
+                                        <button><i style="font-size: 15px; color: #2f80ed;margin-right: 7px"
+                                                class="fas fa-reply"></i>Reply</button>
+                                        <button><i style="font-size: 15px; color: #2f80ed;margin-right: 7px"
+                                                class="fas fa-repeat"></i></i>Quote</button>
+                                    </div>
+                                </div>
+                            <li class="reply-comment-item">
+                                <div class="comment-author">
+                                    <span><i class="far fa-user-alt"></i></span>
+                                    <div class="author">
+                                        <a>Reneta Glasc</a>
+                                        <br>
+                                        <p>14.09.2021, 12:12</p>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.</P>
+                                    </p>
+                                </div>
+                                <div class="action">
+                                    <div class="action1">
+                                        <button><i style="font-size: 15px; color: green;margin-right: 7px"
+                                                class="fas fa-arrow-alt-up"></i>22</button>
+                                        <button><i style="font-size: 15px; color: red;margin-right: 7px"
+                                                class="fas fa-arrow-alt-down"></i>13</button>
+                                    </div>
+                                    <div class="action2">
+                                        <button><i style="font-size: 15px; color: #2f80ed;margin-right: 7px"
+                                                class="fas fa-reply"></i>Reply</button>
+                                        <button><i style="font-size: 15px; color: #2f80ed;margin-right: 7px"
+                                                class="fas fa-repeat"></i></i>Quote</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="reply-comment-item">
+                                <div class="comment-author">
+                                    <span><i class="far fa-user-alt"></i></span>
+                                    <div class="author">
+                                        <a>Morden Talking</a>
+                                        <br>
+                                        <p>20.10.2019, 07:01</p>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour, or randomised words
+                                        which don't look even slightly believable.</P>
+                                    </p>
+                                </div>
+                                <div class="action">
+                                    <div class="action1">
+                                        <button><i style="font-size: 15px; color: green;margin-right: 7px"
+                                                class="fas fa-arrow-alt-up"></i>2</button>
+                                        <button><i style="font-size: 15px; color: red;margin-right: 7px"
+                                                class="fas fa-arrow-alt-down"></i>3</button>
+                                    </div>
+                                    <div class="action2">
+                                        <button><i style="font-size: 15px; color: #2f80ed;margin-right: 7px"
+                                                class="fas fa-reply"></i>Reply</button>
+                                        <button><i style="font-size: 15px; color: #2f80ed;margin-right: 7px"
+                                                class="fas fa-repeat"></i></i>Quote</button>
+                                    </div>
+                                </div>
+                            </li>
+                            </li>
+                            <div class="number">
+                                <a>5 from 17</a>
+                                <ul>
+                                    <li><A><i class="fas fa-arrow-left"></i></A></li>
+                                    <li><a>1</a></li>
+                                    <li><a>2</a></li>
+                                    <li><a>3</a></li>
+                                    <li><a>4</a></li>
+                                    <li><a>5</a></li>
+                                    <li><a><i class="fas fa-arrow-right"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="your-comment">
+                                <textarea> Write your comment here :)
+                            </textarea>
+                                <div class="buttonsend">
+                                    <button type="button" class="btnsend">Send</button>
+                                    <button type="button" class="btnsend"><i style="font-size: 25px;"
+                                            class="fas fa-camera"></i></button>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nofitication">
+                <div class="nofi">
+                    <form action="#">
+                        <div class="sub-img">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h2 style="color: white">Nofitication</h2>
+                        <p style="color: white; font-size: 15px;">Subscribe to notifications about newest episodes</p>
+                        <input class="inputmail" placeholder="Your email here :)" type="text">
+                        <button id="sendmail">SEND</button>
+                    </form>
+                </div>
+                <div class="newitem">
+                    <div class="new-items">
+                        <h2> New movies</h2>
+                    </div>
+                    <div class="newitems1">
+                        <div class="new-movies">
+                            <div class="movies-wrapper">
+                                <a href="#"><img src="./assets/images/details/g.jpg"></a>
+                                <a id="movie1" href="#">The Hobbit</a>
+                            </div>
+                        </div>
+                        <div class="new-movies">
+                            <div class="movies-wrapper">
+                                <a href="#"><img src="./assets/images/details/h.jpg"></a>
+                                <a style="font-size: 17px;" id="movie1" href="#">Harry Potter 2</a>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newitems1">
+                        <div class="new-movies">
+                            <div class="movies-wrapper">
+                                <a href="#"><img src="./assets/images/details/j.jpg"></a>
+                                <a  id="movie1" href="#">John Wick 2</a>  
+                            </div>
+                        </div>
+                        <div class="new-movies">
+                            <div class="movies-wrapper">
+                                <a href="#"><img src="./assets/images/details/k.jpg"></a>
+                                <a id="movie1" href="#">Arcane</a>                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newitems1">
+                        <div class="new-movies">
+                            <div class="movies-wrapper">
+                                <a href="#"><img src="./assets/images/details/m.jpg"></a>
+                                <a  id="movie1" href="#">Doctor Strange2</a>                                
+                            </div>
+                        </div>
+                        <div class="new-movies">
+                            <div class="movies-wrapper">
+                                <a href="#"><img src="./assets/images/details/n.jpg"></a>
+                                <a id="movie1" href="#">Fantastic Beast 2</a>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="similar">
+            <a>Similar Movies and TV serries</a>
+            <div>
+            <div class="similar-movie">
+                <div class="similarmovie1">
+                    <a href="#"><img src="./assets/images/details/g.jpg"></a>
+                    <h3 style="color: white">The Hobbit</h3>
+                </div>
+                <div class="similarmovie1">
+                    <a href="#"><img src="./assets/images/details/j.jpg"></a>
+                    <h3 style="color: white">John Wick 2</h3>
+                </div>
+                <div class="similarmovie1">
+                    <a href="#"><img src="./assets/images/details/k.jpg"></a>
+                    <h3 style="color: white">Arcane</h3>
+                </div>
+                <div class="similarmovie1">
+                    <a href="#"><img src="./assets/images/details/m.jpg"></a>
+                    <h3 style="color: white">Fantastic Beast</h3>
+                </div>
+                <div class="similarmovie1">
+                    <a href="#"><img src="./assets/images/details/n.jpg"></a>
+                    <h3 style="color: white">The Hobbit</h3>
+                </div>
+                <div class="similarmovie1">
+                    <a href="#"><img src="./assets/images/details/h.jpg"></a>
+                    <h3 style="color: white">Harry Potter</h3>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 </body>
-
+<footer>
+    <main-footer></main-footer>
+</footer>
 </html>
