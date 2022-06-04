@@ -317,7 +317,6 @@ class Header extends HTMLElement {
       }
     };
     const logoutBtn = document.querySelector(".logout");
-    console.log(logoutBtn);
     let name = localStorage.getItem("name") ? localStorage.getItem("name") : "";
     if (name === "") {
       window.location.href = "/loginAndRegister.html";

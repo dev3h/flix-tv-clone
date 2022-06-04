@@ -12,6 +12,7 @@
 /* banner */
 .banner {
   margin-top: 10rem;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 .banner-wrapper {
   padding-top: 10rem;
@@ -35,6 +36,7 @@
 /* feature */
 .feature {
   padding: 10rem 0;
+  background-image: linear-gradient(#fff1eb 0%, #ace0f9 100%);
 }
 .feature__content {
   width: 56.9rem;
@@ -60,13 +62,27 @@
   line-height: 2;
   color: #777;
 }
-.slider--inner {
-  display: flex;
-  gap: 2rem;
+.slider {
+  position: relative;
+  width: 100rem;
+  height: 30rem;
+  margin: 0 auto;
   overflow: hidden;
+  cursor: grab;
+}
+.slider--inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.25rem;
+  pointer-events: none;
 }
 .slider__card {
-  flex: 1 0 30%;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  overflow: hidden;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 .feature__slider .slider__card {
@@ -123,6 +139,7 @@
 /* download */
 .download {
   padding: 10rem 0 5rem;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 .download-wrapper {
   display: flex;
@@ -162,11 +179,20 @@
 /* preview film */
 .previewFilm {
   padding: 10rem 0 10rem;
+  background-image: linear-gradient(#fff1eb 0%, #ace0f9 100%);
+}
+.preview__slider {
+  height: 50rem;
+  width: 100%;
+}
+.preview__slider--inner {
+  grid-template-columns: repeat(auto-fit, 1fr);
+
 }
 .preview__slider--inner .slider__card {
   position: relative;
   width: 36.3rem;
-  height: 59.5rem;
+  height: 100%;
   border-radius: 0.5rem;
   overflow: hidden;
   background-color: rgba(33, 24, 19, 0.2);
@@ -175,7 +201,6 @@
   display: block;
   height: 100%;
   color: var(--white-color);
-  mix-blend-mode: multiply;
 }
 .preview__slider--inner .slider__content {
   padding: 1.5rem 1.8rem;
@@ -206,6 +231,7 @@
 /* pricing */
 .pricing {
   padding: 10rem 0 12rem;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 .pricing-wrapper > h2 {
   font-size: 4.6rem;
@@ -224,6 +250,7 @@
 /* question */
 .question {
   padding: 10rem 0;
+  background-image: linear-gradient(#fff1eb 0%, #ace0f9 100%);
 }
 .question-wrapper {
   width: 76.9rem;
@@ -276,4 +303,3 @@
   height: 100%;
   padding: 3rem;
 }
-

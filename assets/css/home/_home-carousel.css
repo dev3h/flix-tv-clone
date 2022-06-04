@@ -9,16 +9,29 @@
 .home-carousel .container-fluid {
   height: 100%;
 }
+.slider {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: grab;
+}
+.slider--inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.25rem;
+  pointer-events: none;
+}
 .slider-main {
   width: 100%;
   height: 100%;
-  display: flex;
   gap: 3rem;
   overflow-x: hidden;
 }
-/* .slider-main::-webkit-scrollbar {
-  display: none;
-} */
 .slider-item {
   display: flex;
   justify-content: space-between;
@@ -48,7 +61,7 @@
   transition: 0.5s ease-in-out;
 }
 .home__card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -112,7 +125,7 @@
   width: 7rem;
   right: 3rem;
   gap: 1rem;
-  color: #Fff;
+  color: #fff;
   padding: 0 1rem;
 }
 .slider-main > button {
@@ -125,6 +138,6 @@
 .slider-main > button.btn-prev {
   left: 0;
 }
-.slider-main > button.btn-next{
+.slider-main > button.btn-next {
   right: 0;
 }

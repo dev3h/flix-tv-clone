@@ -2,6 +2,9 @@
     position: relative;
     padding: 8rem 0;
 }
+.subscription__slider--inner {
+    grid-template-columns: repeat(auto-fit, 1fr);
+}
 .subscription-main .slider-item {
     flex: 1 0 100%;
 }
