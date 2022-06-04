@@ -249,7 +249,7 @@ class Header extends HTMLElement {
               <i class="fal fa-ellipsis-h"></i>
               <ul class="dropdown-menu">
                 <li><a href="../aboutUs.html">About us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../contact.html">Contact</a></li>
                 <li><a href="../landingPage.html">Landing page</a></li>
               </ul>
             </a>

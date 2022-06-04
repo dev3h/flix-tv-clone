@@ -50,16 +50,16 @@
 }
 .step-content{
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
-    width: 1330px;
-    margin-left:50px;
-    
+    width: 100%;
+    /* margin-left:50px; */
 }
 .step{
-    width: 443px;
     height: 238px;
     color:#212529;  
-    flex-basis:33.3333%;
+    flex: 1 0 33.3333%;
     line-height:24px;
     padding: 0px 15px;
     text-align:left;
