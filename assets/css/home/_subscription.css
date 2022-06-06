@@ -2,14 +2,22 @@
     position: relative;
     padding: 8rem 0;
 }
-.subscription__slider--inner {
-    grid-template-columns: repeat(auto-fit, 1fr);
+.subscription-main {
+    overflow: hidden;
 }
-.subscription-main .slider-item {
-    flex: 1 0 100%;
+.subscription__slider {
+    height: auto;
 }
-.subscription-main .card .card__title {
+.subscription__slider--inner .slider-item {
+    flex: 1 0 19.2rem;
+}
+.subscription__slider--inner .slider-item .card__cover {
+    height: 27rem;
+}
+.subscription__slider--inner .card .card__title {
     max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 .card__list.card__list--sub {
