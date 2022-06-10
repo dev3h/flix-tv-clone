@@ -238,7 +238,7 @@ class Header extends HTMLElement {
           <li class="header-menu__item"><a href="../pricingPlan.html">Pricing plans</a></li>
           <!-- Live -->
           <li class="header-menu__item">
-            <a href="#">
+            <a href="../Live.html">
               LIVE
               <span class="circle circle--stream"></span>
             </a>
