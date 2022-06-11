@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 .original__slider {
-  height: auto;
+  min-height: 45rem;
 }
 .original__slider--inner .slider-item {
   flex: 1 0 41.3rem;
@@ -18,6 +18,7 @@
 }
 .original__slider--inner .slider-item .card {
     width: 100%;
+    height: 27.954rem;
 }
 .original__slider--inner .card:hover .card__cover img {
   filter: unset;
@@ -41,7 +42,6 @@
 }
 .original__slider--inner .card__cover img {
   position: relative;
-  height: 28rem;
   transition: 0.3s ease-in-out;
 }
 .original__slider--inner .card:hover .card__cover img {

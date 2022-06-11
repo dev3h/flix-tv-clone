@@ -25,10 +25,13 @@
 }
 .card__cover {
   position: relative;
+  display: block;
+  height: 100%;
 }
 .card__cover img {
   border-radius: 1.6rem;
   transition: 0.3s ease-in-out;
+  height: 100%;
 }
 a.card__cover:hover {
   color: #fff;
