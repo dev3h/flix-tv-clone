@@ -310,3 +310,10 @@
   height: 100%;
   padding: 3rem;
 }
+.lp-section {
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+.lp-section.show {
+  opacity: 1;
+}

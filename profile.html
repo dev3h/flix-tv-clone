@@ -10,47 +10,50 @@
     <!-- import header and footer -->
     <script src="./js/Header.js"></script>
     <script src="./js/Footer.js"></script>
+    <script src="./js/Loader.js"></script>
   </head>
   <body>
-    <main-header></main-header>
-    <div class="main">
-      <div class="section-head">
-        <div class="section-head-content">
-          <div class="user-profile">
-            <div class="user-profile-left">
-              <img
-                style="border-radius: 50%; height: 121px; width: 121px"
-                src="./assets/images/profile/user.jpg"
-              />
-            </div>
-            <div class="user-profile-right">
-              <h4>Manager Profile</h4>
-              <div class="profile-form">
-                <div class="form-name">
-                  <label for="input1">Name</label>
-                  <input
-                    placeholder="Enter your name"
-                    id="input1"
-                    type="text"
-                  />
-                  <label for="input2">Date of Birth</label>
-                  <input
-                    placeholder="Enter your name"
-                    id="input2"
-                    type="text"
-                  />
-                  <select name="Gender">
-                    <option>Male</option>
-                    <option>Female</option>
-                  </select>
-                  <input
-                    placeholder="Language Preference"
-                    id="input3"
-                    type="text"
-                  />
-                  <div class="button">
-                    <button id="btn1"><b>Save</b></button>
-                    <button id="btn2"><b>Cancel</b></button>
+    <main-loader>
+      <main-header></main-header>
+      <div class="main">
+        <div class="section-head">
+          <div class="section-head-content">
+            <div class="user-profile">
+              <div class="user-profile-left">
+                <img
+                  style="border-radius: 50%; height: 121px; width: 121px"
+                  src="./assets/images/profile/user.jpg"
+                />
+              </div>
+              <div class="user-profile-right">
+                <h4>Manager Profile</h4>
+                <div class="profile-form">
+                  <div class="form-name">
+                    <label for="input1">Name</label>
+                    <input
+                      placeholder="Enter your name"
+                      id="input1"
+                      type="text"
+                    />
+                    <label for="input2">Date of Birth</label>
+                    <input
+                      placeholder="Enter your name"
+                      id="input2"
+                      type="text"
+                    />
+                    <select name="Gender">
+                      <option>Male</option>
+                      <option>Female</option>
+                    </select>
+                    <input
+                      placeholder="Language Preference"
+                      id="input3"
+                      type="text"
+                    />
+                    <div class="button">
+                      <button id="btn1"><b>Save</b></button>
+                      <button id="btn2"><b>Cancel</b></button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -58,7 +61,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <main-footer></main-footer>
+      <main-footer></main-footer>
+    </main-loader>
   </body>
 </html>

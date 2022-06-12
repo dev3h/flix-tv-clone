@@ -10,75 +10,78 @@
     <!-- import header and footer -->
     <script src="./js/Header.js"></script>
     <script src="./js/Footer.js"></script>
+    <script src="./js/Loader.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <!-- header -->
-      <main-header></main-header>
-      <!-- end header -->
-      <!-- main -->
-      <div class="main">
-        <section class="contact">
-          <div class="container">
-            <div class="contact-main">
-              <!-- contact heading -->
-              <div class="contact__heading">
-                <h1>Contact</h1>
-                <ul class="breadcrumb">
-                  <li class="breadcrumb__item">
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li class="breadcrumb__item active">Contact</li>
-                </ul>
-              </div>
-                <!-- end contact heading -->
-                <div class="contact__content">
-                    <!-- contact form -->
-                    <div class="contact__form">
-                        <form action="">
-                            <div class="form__group">
-                                <input type="text" class="form-control" id="name" placeholder="Name" required>
-                                <input type="email" class="form-control" id="email" placeholder="Email" required>
-                                <textarea class="form-control" id="message" placeholder="Type your message" required></textarea>
-                            </div>
-                            <button type="submit" class="contact__btn">Send</button>
-                        </form>
-                    </div>
-                    <!-- end contact form -->
-                    <!-- contact info -->
-                    <div class="contact__info">
-                        <h2>Info</h2>
-                        <p>It is a long fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-                        <ul class="contacts__list">
-                          <li><a href="tel:+18092345678">+1 809 234-56-78</a></li>
-                          <li><a href="mailto:support@flixtv.template">support@flixtv.template</a></li>
-                        </ul>
-                        <ul class="contacts__social">
-                          <li><a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                          </a></li>
-                          <li><a href="#">
-                            <i class="fab fa-twitter"></i>
-                          </a></li>
-                          <li><a href="#">
-                            <i class="fab fa-instagram"></i>
-                          </a></li>
-                          <li><a href="#">
-                            <i class="fab fa-youtube"></i>
-                          </a></li>
-                          <li><a href="#">
-                            <i class="fab fa-tiktok"></i>
-                          </a></li>
-                        </ul>
+    <main-loader>
+      <div class="wrapper">
+        <!-- header -->
+        <main-header></main-header>
+        <!-- end header -->
+        <!-- main -->
+        <div class="main">
+          <section class="contact">
+            <div class="container">
+              <div class="contact-main">
+                <!-- contact heading -->
+                <div class="contact__heading">
+                  <h1>Contact</h1>
+                  <ul class="breadcrumb">
+                    <li class="breadcrumb__item">
+                      <a href="./index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb__item active">Contact</li>
+                  </ul>
+                </div>
+                  <!-- end contact heading -->
+                  <div class="contact__content">
+                      <!-- contact form -->
+                      <div class="contact__form">
+                          <form action="">
+                              <div class="form__group">
+                                  <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                  <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                  <textarea class="form-control" id="message" placeholder="Type your message" required></textarea>
+                              </div>
+                              <button type="submit" class="contact__btn">Send</button>
+                          </form>
                       </div>
+                      <!-- end contact form -->
+                      <!-- contact info -->
+                      <div class="contact__info">
+                          <h2>Info</h2>
+                          <p>It is a long fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                          <ul class="contacts__list">
+                            <li><a href="tel:+18092345678">+1 809 234-56-78</a></li>
+                            <li><a href="mailto:support@flixtv.template">support@flixtv.template</a></li>
+                          </ul>
+                          <ul class="contacts__social">
+                            <li><a href="#">
+                              <i class="fab fa-facebook-f"></i>
+                            </a></li>
+                            <li><a href="#">
+                              <i class="fab fa-twitter"></i>
+                            </a></li>
+                            <li><a href="#">
+                              <i class="fab fa-instagram"></i>
+                            </a></li>
+                            <li><a href="#">
+                              <i class="fab fa-youtube"></i>
+                            </a></li>
+                            <li><a href="#">
+                              <i class="fab fa-tiktok"></i>
+                            </a></li>
+                          </ul>
+                        </div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
+        <!-- end main -->
+        <!-- footer -->
+        <main-footer></main-footer>
+        <!-- footer -->
       </div>
-      <!-- end main -->
-      <!-- footer -->
-      <main-footer></main-footer>
-      <!-- footer -->
-    </div>
+    </main-loader>
   </body>
 </html>

@@ -36,6 +36,7 @@ class Header extends HTMLElement {
       .header-menu .header-menu__item a {
         display: flex;
         gap: 0.8rem;
+        padding: 0.5rem;
         align-items: center;
         font-size: 1.4rem;
         cursor: pointer;
@@ -62,41 +63,30 @@ class Header extends HTMLElement {
       }
       .header-menu .header-menu__item .dropdown-menu {
         position: absolute;
+        z-index: 2;
         /* display: none; */
         width: 20rem;
         padding: 0 2rem;
-        margin-top: 2.5rem;
-        border-radius: 1.6rem;
+        border: 1px solid var(--white-color);
+        border-radius: 1rem;
         background: var(--bg-shape);
         transition: 0.3s ease-in-out;
-      }
-      .header-menu__item::before {
-        content: "";
-        position: absolute;
-        top: 2rem;
-        left: 0;
-        z-index: 2;
-        width: 20rem;
-        height: 3.5rem;
       }
       .header-menu__item:hover .dropdown-menu {
         display: block;
       }
-      .dropdown-menu li:nth-of-type(1) {
-        padding-top: 2rem;
-      }
       .dropdown-menu li {
         width: 100%;
-        padding-bottom: 2rem;
       }
       .dropdown-menu .sub-dropdown-menu {
         position: absolute;
-        top: 20%;
+        top: 38%;
         right: -20.5rem;
         display: none;
         width: 20rem;
         padding: 0 2rem;
-        border-radius: 1.6rem;
+        border: 1px solid var(--white-color);
+        border-radius: 1rem;
         background: var(--bg-shape);
         transition: 0.3s ease-in-out;
       }

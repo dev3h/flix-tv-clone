@@ -1,10 +1,8 @@
 const filmName = document.querySelectorAll("catalog__item card card__title a");
 const filmCard = document.querySelectorAll(".catalog__item");
-const filmSelect = document.querySelector(".catalog__select");
-const filmOptions = filmSelect.options;
+const filmSelects = document.querySelectorAll(".catalog__select");
 const filmRadio = document.querySelectorAll(".catalog-radio > span");
 const searchItem = document.getElementById("header__form-input");
-// filter
 Array.from(filmRadio).forEach((element) => {
   element.addEventListener("click", function (e) {
     for (let i = 0; i < filmRadio.length; i++) {
@@ -13,17 +11,26 @@ Array.from(filmRadio).forEach((element) => {
     this.classList.add("active");
   });
 });
-filmSelect.addEventListener("change", filmFilter);
-function filmFilter() {
-  let name_filter = filmOptions[filmSelect.selectedIndex].dataset.filter;
-
-  Array.from(filmCard).forEach(function (element) {
-    if (element.dataset.filmgenre === name_filter || name_filter === "all") {
-      element.style.display = "block";
-    } else {
-      element.style.display = "none";
-    }
-  });
+// filter
+for (let filmSelect of filmSelects) {
+  const filmOptions = filmSelect.options;
+  filmSelect.addEventListener("change", filmFilter);
+  function filmFilter() {
+    let name_filter = filmOptions[filmSelect.selectedIndex].dataset.filter;
+    Array.from(filmCard).forEach(function (element) {
+      if (
+        element.dataset.filmgenre === name_filter ||
+        element.dataset.filmyear === name_filter ||
+        (element.dataset.filmgenre === name_filter &&
+          element.dataset.filmyear === name_filter) ||
+        name_filter === "all"
+      ) {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    });
+  }
 }
 // search
 searchItem.addEventListener("keyup", searchFilm);
@@ -54,3 +61,12 @@ function checkEmpty(element) {
     document.querySelector(".not-found-film").textContent = "";
   }
 }
+// tooltip card title
+Array.from(filmCard).forEach((element) => {
+  let nameFilm = element.querySelector(".card__title");
+  nameFilm.addEventListener("mouseover", function () {
+    let tooltip = document.createAttribute("title");
+    tooltip.value = nameFilm.textContent;
+    nameFilm.setAttributeNode(tooltip);
+  });
+});
