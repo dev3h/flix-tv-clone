@@ -12747,3 +12747,6 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Pro';
   font-weight: 900; }
+
+@import url('./_header.css');
+@import url('./_footer.css');
