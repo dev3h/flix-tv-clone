@@ -13,6 +13,7 @@
     <script src="./js/Header.js"></script>
     <script src="./js/Footer.js"></script>
     <script src="./js/Loader.js"></script>
+    <script type="module" src="./js/LoadFilm.js"></script>
   </head>
   <body>
     <!-- <main-loader> -->
@@ -266,35 +267,8 @@
               <!-- catalog grid -->
               <div class="catalog__grid">
                 <!-- grid item 1 -->
-                <div
-                  class="catalog__item"
-                  data-filmGenre="action"
-                  data-FilmYear="2021"
-                >
-                  <div class="card">
-                    <a href="./detail.html" class="card__cover">
-                      <img src="./assets/images/catalog/catalog1.jpg" alt="" />
-                      <i class="fal fa-play-circle"></i>
-                    </a>
-                    <button type="button" class="card__add">
-                      <i class="fal fa-bookmark"></i>
-                    </button>
-                    <button type="button" class="card__rating">
-                      <i class="fal fa-star"></i>
-                      9.1
-                    </button>
-                    <h3 class="card__title">
-                      <a href="#">Matrix Resurrections</a>
-                    </h3>
-                    <ul class="card__list">
-                      <li>Free</li>
-                      <li>Action</li>
-                      <li>2021</li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- grid item 2 -->
-                <div
+                <film-card class="catalog__grid"></film-card>
+                <!-- <div
                   class="catalog__item"
                   data-filmGenre="comedy"
                   data-FilmYear="2022"
@@ -321,7 +295,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 3 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="history"
@@ -349,7 +322,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 4 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="biography"
@@ -377,7 +349,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 5 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="horror"
@@ -405,7 +376,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 6 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="history"
@@ -433,7 +403,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 7 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="drama"
@@ -461,7 +430,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 8 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="documentary"
@@ -489,7 +457,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 9 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="documentary"
@@ -517,7 +484,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 10 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="biography"
@@ -545,7 +511,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 11 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="drama"
@@ -573,7 +538,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 12 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="drama"
@@ -601,7 +565,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 13 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="thriller"
@@ -629,7 +592,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 14 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="biography"
@@ -657,7 +619,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 15 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="horror"
@@ -685,7 +646,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 16 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="thriller"
@@ -713,7 +673,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 17 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="thriller"
@@ -741,7 +700,6 @@
                     </ul>
                   </div>
                 </div>
-                <!-- grid item 18 -->
                 <div
                   class="catalog__item"
                   data-filmGenre="comedy"
@@ -768,7 +726,7 @@
                       <li>2022</li>
                     </ul>
                   </div>
-                </div>
+                </div> -->
               </div>
               <h2 class="not-found-film"></h2>
               <button class="catalog__more btn-sample">load more</button>
