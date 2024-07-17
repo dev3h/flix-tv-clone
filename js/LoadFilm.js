@@ -1,19 +1,38 @@
-import { films } from "../data/index.js";
+// import { films } from "../data/index.js";
 
 class FilmCard extends HTMLElement {
    
     // map the films and add them to innerHTML
-    connectedCallback() {
-        const film = films.map((film) => {
+    async connectedCallback() {
+      const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
+      const options = {
+        method: 'GET',
+        headers: {
+          'x-rapidapi-key': '348fa93ebamsh5392cfeb2a8990dp1188c3jsnb722fd52dfd8',
+          'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
+        }
+      };
+      const getAllFilms = async () => {
+        try {
+          const response = await fetch(url, options);
+          const result = await response.json();
+          return result
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      const filmsData = await getAllFilms();
+      console.log(filmsData);
+        const film = filmsData?.map((film) => {
             return `
             <div
                   class="catalog__item"
-                  data-filmGenre=${film?.category}
+                  data-filmGenre=${film?.genre}
                   data-FilmYear=${film?.year}
                 >
                   <div class="card">
                     <a href="./detail.html" class="card__cover">
-                      <img src="./assets/images/catalog/catalog1.jpg" alt="" />
+                      <img src=${film?.image} alt="" loading="lazy" />
                       <i class="fal fa-play-circle"></i>
                     </a>
                     <button type="button" class="card__add">
@@ -21,15 +40,15 @@ class FilmCard extends HTMLElement {
                     </button>
                     <button type="button" class="card__rating">
                       <i class="fal fa-star"></i>
-                      9.1
+                      ${film?.rating}
                     </button>
                     <h3 class="card__title">
                       <a href="#">${film?.title}</a>
                     </h3>
                     <ul class="card__list">
                       <li>Free</li>
-                      <li>Action</li>
-                      <li>2021</li>
+                      <li>${film?.genre?.[0]}</li>
+                      <li>${film?.year}</li>
                     </ul>
                   </div>
                 </div>

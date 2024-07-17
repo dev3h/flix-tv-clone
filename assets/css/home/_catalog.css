@@ -67,6 +67,24 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 10rem 5rem;
 }
+@media screen and (max-width: 1024px) {
+  .catalog__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .catalog__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+@media screen and (max-width: 576px) {
+  .catalog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
 .catalog__item {
   width: 16rem;
   height: 22.5rem;
