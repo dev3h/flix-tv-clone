@@ -9,11 +9,8 @@
     <link rel="stylesheet" href="./assets/css/all.css" />
     <link rel="stylesheet" href="./assets/css/home/home.css" />
     <link rel="stylesheet" href="./assets/css/details/details.css"> <!-- import header and footer -->
-    <script src="./js/Header.js"></script>
-    <script src="./js/Footer.js"></script>
-</head>
-
-<body>
+    <link rel="stylesheet" href="./assets/css/_header.css" />
+    <link rel="stylesheet" href="./assets/css/_footer.css" />
     <style>
     .movies-wrapper img{
         display:block;
@@ -49,6 +46,11 @@
 	    overflow: hidden;
     }
     </style>
+    <script src="./js/Header.js"></script>
+    <script src="./js/Footer.js"></script>
+</head>
+
+<body>
     <div class="wrapper">
         <main-header></main-header>
         <div class="wallaper">
@@ -56,7 +58,7 @@
                 <div class="info">
                     <div class="info1">
                         <a href="#" id="playtrailer"><span><i class="fal fa-play-circle"></i></span>Trailer</a>
-                        <h1>Pirates of the Caribbean: Dead Men Tell No Tales</h1>
+                        <h1 class="film-title">Pirates of the Caribbean: Dead Men Tell No Tales</h1>
                         <ul id="list">
                             <li><span><i class="far fa-star"></i></span>9.9</li>
                             <li><span style="font-size: 10px"><i class="fas fa-circle"></i></i></span>Action</li>
@@ -74,7 +76,7 @@
         <div class="video-wrapper">
             <div class="video">
                 <div class="video1">
-                    <video style="border-radius: 0%;" control autoplay>
+                    <video style="border-radius: 0%;" control>
                         <source src="./assets/images/details/PIRATES OF THE CARIBBEAN 5 Trailer 1 + 2 (2017).mp4">
                     </video>
                 </div>
@@ -465,8 +467,9 @@
             </div>
         </div>
     </div>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script src="./js/DetailFilm.js"></script>
 </body>
-<footer>
-    <main-footer></main-footer>
-</footer>
 </html>
