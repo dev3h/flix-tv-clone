@@ -1,0 +1,26 @@
+{
+  "name": "flix-tv-clone",
+  "version": "1.0.0",
+  "description": "Flix TV Clone - Static Website Project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "live-server --port=3000 --host=localhost --entry-file=index.html --wait=200",
+    "serve": "http-server . -p 3000 -o",
+    "production": "node server.js"
+  },
+  "keywords": [
+    "flix",
+    "tv",
+    "clone",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  }
+}

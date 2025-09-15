@@ -59,7 +59,7 @@
 }
 .header-menu .header-menu__item .dropdown-menu {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   /* display: none; */
   width: 20rem;
   padding: 0 2rem;
