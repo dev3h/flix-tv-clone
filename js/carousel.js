@@ -28,7 +28,7 @@ for (let sliderContainer of sliderContainers) {
   const sliderItems = sliderInner.querySelectorAll(".slider-item");
   const sliderItemWidth = sliderItems[0].offsetWidth;
   const sliderItemCount = sliderItems.length;
-  sliderContainer.style.width = `${sliderItemWidth * sliderItemCount}px`;
+  // sliderContainer.style.width = `${sliderItemWidth * sliderItemCount}px`;
   let index = 0;
   function next() {
     if (index < sliderItemCount - 1) {

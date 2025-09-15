@@ -66,3 +66,115 @@ button.plan__btn {
   background: #fff;
   color: #151f30;
 }
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet responsive */
+@media (max-width: 1023px) {
+  .plan {
+    padding-bottom: 6rem;
+  }
+  
+  .plan-wrapper {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .plan__card {
+    padding: 2.5rem;
+  }
+  
+  .plan__title {
+    font-size: 1.8rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .plan__price {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  
+  .plan__list li {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .plan {
+    padding-bottom: 4rem;
+  }
+  
+  .plan-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .plan__card {
+    flex: none;
+    padding: 2rem;
+  }
+  
+  .plan__title {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .plan__price {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .plan__price > small {
+    font-size: 1.4rem;
+  }
+  
+  .plan__list li {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  
+  button.plan__btn {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 479px) {
+  .plan {
+    padding-bottom: 3rem;
+  }
+  
+  .plan__card {
+    padding: 1.5rem;
+  }
+  
+  .plan__title {
+    font-size: 1.5rem;
+  }
+  
+  .plan__price {
+    font-size: 2.2rem;
+  }
+  
+  .plan__list li {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  
+  button.plan__btn {
+    padding: 1.2rem;
+    font-size: 1.4rem;
+  }
+}

@@ -80,8 +80,6 @@
 /* footer-right */
 .footer-right {
   flex: 75%;
-}
-.footer-right {
   display: flex;
   margin-left: 11.2rem;
   margin-top: 4rem;
@@ -109,6 +107,11 @@
 }
 .footer__nav a {
   font-size: 1.4rem;
+  color: var(--white-color);
+  transition: color 0.3s ease;
+}
+.footer__nav a:hover {
+  color: var(--pri-color);
 }
 .footer__group {
   display: flex;
@@ -133,4 +136,240 @@
   align-items: center;
   gap: 3rem;
   font-size: 1.4rem;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet responsive */
+@media (max-width: 1023px) {
+  .footer {
+    padding: 3rem 0;
+  }
+  
+  .top-footer {
+    gap: 3rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .footer-left {
+    flex: none;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .footer-right {
+    flex: none;
+    margin-left: 0;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  
+  .footer__group {
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col {
+    width: auto;
+    min-width: 20rem;
+    text-align: center;
+  }
+  
+  .footer__social {
+    justify-content: center;
+    gap: 2rem;
+    width: auto;
+  }
+  
+  .bottom-footer {
+    margin-top: 4rem;
+    padding: 2.5rem 1rem 0;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .footer__links {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .footer {
+    padding: 2.5rem 0;
+  }
+  
+  .top-footer {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: stretch;
+  }
+  
+  .footer-left {
+    flex: none;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .footer__tagline {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .footer__social {
+    justify-content: center;
+    gap: 2rem;
+    width: auto;
+    height: auto;
+    margin-top: 2rem;
+  }
+  
+  .footer__social a {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.6rem;
+  }
+  
+  .footer-right {
+    flex: none;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  
+  .footer__group {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  
+  .footer-col {
+    width: 100%;
+    max-width: 30rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .footer__title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .footer__nav {
+    width: 100%;
+    max-width: 28rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+    justify-items: center;
+  }
+  
+  .footer__nav a {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+  }
+  
+  .bottom-footer {
+    margin-top: 3rem;
+    padding: 2rem 1rem 0;
+    gap: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer__copyright {
+    font-size: 1.2rem;
+    order: 2;
+  }
+  
+  .footer__links {
+    flex-direction: column;
+    gap: 1rem;
+    order: 1;
+  }
+  
+  .footer__links a {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 479px) {
+  .footer {
+    padding: 2rem 0;
+  }
+  
+  .footer-left {
+    padding: 0 0.5rem;
+  }
+  
+  .footer__tagline {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .footer__social {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .footer__social a {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+  }
+  
+  .footer__group {
+    gap: 2rem;
+  }
+  
+  .footer-col {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+  
+  .footer__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer__nav {
+    max-width: 100%;
+    gap: 0.8rem 1.5rem;
+  }
+  
+  .footer__nav a {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+  
+  .bottom-footer {
+    margin-top: 2.5rem;
+    padding: 1.5rem 0.5rem 0;
+    gap: 1.2rem;
+  }
+  
+  .footer__copyright {
+    font-size: 1.1rem;
+  }
+  
+  .footer__links a {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
 }

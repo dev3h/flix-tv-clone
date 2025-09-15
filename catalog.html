@@ -7,194 +7,198 @@
         <title> Catalog </title>
         <link rel="stylesheet" href="./assets/css/all.css" />
         <link rel="stylesheet" href="./assets/css/home/home.css" />
-        <link rel="stylesheet" href="./assets/css//catalog/catalog.css"> <!-- import header and footer -->
+        <link rel="stylesheet" href="./assets/css/_header.css" />
+        <link rel="stylesheet" href="./assets/css/_footer.css" />
+        <link rel="stylesheet" href="./assets/css/catalog/catalog.css"> 
+        <!-- import header and footer -->
+        <script src="./js/BaseComponent.js"></script>
         <script src="./js/Header.js"></script>
         <script src="./js/Footer.js"></script>
-        <script src="/js/Loader.js"></script>
+        <script src="./js/Loader.js"></script>
     </head>
     <body>
         <main-loader>
             <main-header></main-header>
             <div class="wrapper">
-                <div class="section-head">
-                    <h1>Catalog</h1>
-                    <div class="item">
-                        <a style="float: right; padding-right: 12px" href="./index.html">Home </a>
-                        <p style="letter-spacing:12px">→</p>
-                        <span style="float: right; display: flex;" href="#">Catalog</span>
+                <div class="container">
+                    <div class="section-head">
+                        <h1>Catalog</h1>
+                        <nav class="breadcrumb">
+                            <a href="./index.html">Home</a>
+                            <span class="breadcrumb-separator">→</span>
+                            <span class="breadcrumb-current">Catalog</span>
+                        </nav>
                     </div>
-                </div>
-                <div class="section2">
-                    <div class="section2-1">
-                        <div class="section2-1-1">
-                            <a href="#">
-                            <h3 class="type">Animals</h3>
-                            <img src="./assets/images/catalog/a.jpg">
-                            <span>150</span>
-                        </a>
+                    <div class="section2">
+                        <div class="section2-1">
+                            <div class="section2-1-1">
+                                <a href="#">
+                                <h3 class="type">Animals</h3>
+                                <img src="./assets/images/catalog/a.jpg">
+                                <span>150</span>
+                            </a>
+                            </div>
+                            <div class="section2-1-1">
+                                <a href="#">
+                                <h3 class="type">Comedy</h3>
+                                <img src="./assets/images/catalog/b.jpg">
+                                <span>50</span>
+                            </a>
+                            </div>
+                            <div class="section2-1-1">
+                                <a href="#">
+                                <h3 class="type">Documentary</h3>
+                                <img src="./assets/images/catalog/c.jpg">
+                                <span>10</span>
+                            </a>
+                            </div>
+                            <div class="section2-1-1">
+                                <a href="#">
+                                <h3 class="type">History</h3>
+                                <img src="./assets/images/catalog/d.png">
+                                <span>29</span>
+                            </a>
                         </div>
-                        <div class="section2-1-1">
-                            <a href="#">
-                            <h3 class="type">Comedy</h3>
-                            <img src="./assets/images/catalog/b.jpg">
-                            <span>50</span>
-                        </a>
+                </div>
+                <div class="section2-1">
+                    <div class="section2-1-1">
+                        <a href="#">
+                        <h3 class="type">Horror</h3>
+                        <img src="./assets/images/catalog/e.jpg">
+                        <span>71</span>
+                    </a>
+                    </div>
+                    <div class="section2-1-1">
+                        <a href="#">
+                        <h3 class="type">Sience Fictions</h3>
+                        <img src="./assets/images/catalog/f.jpg">
+                        <span>77</span>
+                    </a>
+                    </div>
+                    <div class="section2-1-1">
+                        <a href="#">
+                        <h3 class="type">Travel</h3>
+                        <img src="./assets/images/catalog/g.jpg">
+                        <span>110</span>
+                    </a>
+                    </div>
+                    <div class="section2-1-1">
+                        <a href="#">
+                        <h3 class="type">Western</h3>
+                        <img src="./assets/images/catalog/h.jpg">
+                        <span>54</span>
+                    </a>
+                </div>      
+                    </div>
+                    </div>
+                    <div class="section3">
+                        <a>Popular</a>
+                        <div class="newestmovie">
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/j.jpg"></a>
+                                <h3 style="color: white">Bố già</h3>
+                            </div>
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/k.jpg"></a>
+                                <h3 style="color: white">IT 2</h3>
+                            </div>
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/m.webp"></a>
+                                <h3 style="color: white">Spider-Man</h3>
+                            </div>
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/n.jpg"></a>
+                                <h3 style="color: white">Spider-Man 2</h3>
+                            </div>
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/o.webp"></a>
+                                <h3 style="color: white">Penisula 2</h3>
+                            </div>
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/p.jpg"></a>
+                                <h3 style="color: white">Love & Death & Robot</h3>
+                            </div>
                         </div>
-                        <div class="section2-1-1">
-                            <a href="#">
-                            <h3 class="type">Documentary</h3>
-                            <img src="./assets/images/catalog/c.jpg">
-                            <span>10</span>
-                        </a>
+                    </div>
+                    <div class="section3">
+                        <a>Newest Movies</a>
+                        <div>
+                        <div class="newestmovie">
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/j.jpg"></a>
+                                <h3 style="color: white">Bố già</h3>
+                            </div>
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/k.jpg"></a>
+                                <h3 style="color: white">IT 2</h3>
+                            </div>
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/m.webp"></a>
+                                <h3 style="color: white">Spider-Man</h3>
+                            </div>
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/n.jpg"></a>
+                                <h3 style="color: white">Spider-Man 2</h3>
+                            </div>
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/o.webp"></a>
+                                <h3 style="color: white">Penisula 2</h3>
+                            </div>
+                            <div class="newmovie1">
+                                <a href="#"><img src="./assets/images/catalog/p.jpg"></a>
+                                <h3 style="color: white">Love & Death & Robot</h3>
+                            </div>
                         </div>
-                        <div class="section2-1-1">
-                            <a href="#">
-                            <h3 class="type">History</h3>
-                            <img src="./assets/images/catalog/d.png">
-                            <span>29</span>
-                        </a>
-                    </div>
-            </div>
-            <div class="section2-1">
-                <div class="section2-1-1">
-                    <a href="#">
-                    <h3 class="type">Horror</h3>
-                    <img src="./assets/images/catalog/e.jpg">
-                    <span>71</span>
-                </a>
-                </div>
-                <div class="section2-1-1">
-                    <a href="#">
-                    <h3 class="type">Sience Fictions</h3>
-                    <img src="./assets/images/catalog/f.jpg">
-                    <span>77</span>
-                </a>
-                </div>
-                <div class="section2-1-1">
-                    <a href="#">
-                    <h3 class="type">Travel</h3>
-                    <img src="./assets/images/catalog/g.jpg">
-                    <span>110</span>
-                </a>
-                </div>
-                <div class="section2-1-1">
-                    <a href="#">
-                    <h3 class="type">Western</h3>
-                    <img src="./assets/images/catalog/h.jpg">
-                    <span>54</span>
-                </a>
-            </div>      
-                </div>
-            </div>
-            <div class="section3">
-                <a>Popular</a>
-                <div>
-                <div class="newestmovie">
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/j.jpg"></a>
-                        <h3 style="color: white">Bố già</h3>
-                    </div>
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/k.jpg"></a>
-                        <h3 style="color: white">IT 2</h3>
-                    </div>
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/m.webp"></a>
-                        <h3 style="color: white">Spider-Man</h3>
-                    </div>
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/n.jpg"></a>
-                        <h3 style="color: white">Spider-Man 2</h3>
-                    </div>
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/o.webp"></a>
-                        <h3 style="color: white">Penisula 2</h3>
-                    </div>
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/p.jpg"></a>
-                        <h3 style="color: white">Love & Death & Robot</h3>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="section3" style="margin-top: -100px;">
-                <a>Newest Movies</a>
-                <div>
-                <div class="newestmovie">
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/j.jpg"></a>
-                        <h3 style="color: white">Bố già</h3>
-                    </div>
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/k.jpg"></a>
-                        <h3 style="color: white">IT 2</h3>
-                    </div>
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/m.webp"></a>
-                        <h3 style="color: white">Spider-Man</h3>
-                    </div>
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/n.jpg"></a>
-                        <h3 style="color: white">Spider-Man 2</h3>
-                    </div>
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/o.webp"></a>
-                        <h3 style="color: white">Penisula 2</h3>
-                    </div>
-                    <div class="newmovie1">
-                        <a href="#"><img src="./assets/images/catalog/p.jpg"></a>
-                        <h3 style="color: white">Love & Death & Robot</h3>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="section4">
-                <div class="section4-1">
-                   <h2 style="margin-bottom: 10px; font-size: 36px; font-family:'Rubik'""> Select your plan</h2>
-                    <p>No hidden fees, equipment rentals, or installation appointments.</p>
-                <div class="section4-2">
-                    <div class="section4-2-1">
-                        <div class="section4-2-1-1">
-                            <h3>Regular</h3>
-                            <ul>
-                                <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>FlixTV Originals</li>
-                                <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>Switch plans or cancel anytime</li>
-                                <li><i style="color: red;margin-right: 7px;" class="fas fa-times"></i>Stream 65+ top Live</li>
-                                <li><i style="color: red;margin-right: 7px;" class="fas fa-times"></i>TV channels</li>
-                            </ul>
-                            <span><h2>$11.99</h2>/month</span>
                         </div>
-                        <button type="button">Select plan</button>
                     </div>
-                    <div class="section4-2-1">
-                        <div style="background-color: rgba(47,128,237,0.9) ; "class="section4-2-1-11">
-                            <h3>Premium</h3>
-                            <ul>
-                                <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>FlixTV Originals</li>
-                                <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>Switch plans or cancel anytime</li>
-                                <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>Stream 65+ top Live</li>
-                                <li><i style="color: red;margin-right: 7px;" class="fas fa-times"></i>TV channels</li>
-                            </ul>
-                            <span><h2>$11.99</h2>/month</span>
+                    <div class="section4">
+                        <div class="section4-1">
+                        <h2 style="margin-bottom: 10px; font-size: 36px; font-family:'Rubik'""> Select your plan</h2>
+                            <p>No hidden fees, equipment rentals, or installation appointments.</p>
+                        <div class="section4-2">
+                            <div class="section4-2-1">
+                                <div class="section4-2-1-1">
+                                    <h3>Regular</h3>
+                                    <ul>
+                                        <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>FlixTV Originals</li>
+                                        <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>Switch plans or cancel anytime</li>
+                                        <li><i style="color: red;margin-right: 7px;" class="fas fa-times"></i>Stream 65+ top Live</li>
+                                        <li><i style="color: red;margin-right: 7px;" class="fas fa-times"></i>TV channels</li>
+                                    </ul>
+                                    <span><h2>$11.99</h2>/month</span>
+                                    <button type="button">Select plan</button>
+                                </div>
+                            </div>
+                            <div class="section4-2-1">
+                                <div class="section4-2-1-1">
+                                    <h3>Premium</h3>
+                                    <ul>
+                                        <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>FlixTV Originals</li>
+                                        <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>Switch plans or cancel anytime</li>
+                                        <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>Stream 65+ top Live</li>
+                                        <li><i style="color: red;margin-right: 7px;" class="fas fa-times"></i>TV channels</li>
+                                    </ul>
+                                    <span><h2>$11.99</h2>/month</span>
+                                    <button type="button">Select plan</button>
+                                </div>
+                            </div>
+                            <div class="section4-2-1">
+                                <div class="section4-2-1-1">
+                                    <h3>Premium +TV channels</h3>
+                                    <ul>
+                                        <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>FlixTV Originals</li>
+                                        <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>Switch plans or cancel anytime</li>
+                                        <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>Stream 65+ top Live</li>
+                                        <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>TV channels</li>
+                                    </ul>
+                                    <span><h2>$11.99</h2>/month</span>
+                                    <button type="button">Select plan</button>
+                                </div>
+                            </div>
                         </div>
-                        <button type="button">Select plan</button>
-                    </div>
-                    <div class="section4-2-1">
-                        <div class="section4-2-1-1">
-                            <h3>Premium +TV channels</h3>
-                            <ul>
-                                <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>FlixTV Originals</li>
-                                <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>Switch plans or cancel anytime</li>
-                                <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>Stream 65+ top Live</li>
-                                <li><i style="color: green;margin-right: 7px;" class="fas fa-check"></i>TV channels</li>
-                            </ul>
-                            <span><h2>$11.99</h2>/month</span>
                         </div>
-                        <button type="button">Select plan</button>
                     </div>
                 </div>
-                </div>
-            </div>
             </div>
             <main-footer></main-footer>
         </main-loader>

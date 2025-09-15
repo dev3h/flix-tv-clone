@@ -16,7 +16,7 @@
   align-items: center;
   width: 100%;
   height: 10rem;
-  padding: 0 3rem;
+  overflow: hidden;
 }
 .header-menu {
   display: flex;
@@ -135,6 +135,12 @@
   color: var(--pri-color);
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  z-index: 2;
 }
 .header__search:hover {
   color: #fff;
@@ -176,4 +182,244 @@
   display: inline-block;
   font-size: 1.6rem;
   text-transform: capitalize;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Mobile hamburger menu */
+.header__hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  gap: 0.4rem;
+}
+
+.header__hamburger span {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  background: #fff;
+  border-radius: 0.2rem;
+  transition: 0.3s ease;
+}
+
+.header__hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(0.5rem, 0.5rem);
+}
+
+.header__hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(0.7rem, -0.6rem);
+}
+
+/* Mobile menu overlay */
+.header-menu.mobile-menu {
+  position: fixed;
+  top: 10rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(1rem);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 99;
+}
+
+.header-menu.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.header-menu.mobile-menu .header-menu__item {
+  margin: 1.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.header-menu.mobile-menu .header-menu__item a {
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+/* Tablet responsive */
+@media (max-width: 1023px) {
+  .header-main {
+    height: 8rem;
+  }
+  
+  .header-menu {
+    width: auto;
+    gap: 2rem;
+  }
+  
+  .header-menu .header-menu__item a {
+    font-size: 1.3rem;
+    padding: 0.3rem;
+  }
+  
+  .header__user .sub-dropdown {
+    width: 25rem;
+    right: 5%;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .header-main {
+    height: 7rem;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+  
+  .header__logo {
+    flex-shrink: 0;
+  }
+  
+  .header__logo img {
+    height: 3.5rem;
+    width: auto;
+  }
+  
+  .header__hamburger {
+    display: flex;
+    order: 3;
+    flex-shrink: 0;
+  }
+  
+  .header__action {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    order: 2;
+  }
+  
+  .header-menu {
+    display: none;
+    width: auto;
+  }
+  
+  .header-menu.mobile-menu {
+    display: flex;
+  }
+  
+  .header__user {
+    position: relative;
+    flex-shrink: 0;
+  }
+  
+  .header__user img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+  }
+  
+  .header__user .sub-dropdown {
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  .header__form {
+    margin: 0;
+    width: 100%;
+    max-width: 25rem;
+    position: relative;
+  }
+  
+  .header__form .header__form-input {
+    font-size: 1.4rem;
+    padding: 0.8rem 4rem 0.8rem 1.5rem;
+    height: 4rem;
+    border-radius: 2rem;
+  }
+  
+  .header__search {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--pri-color);
+    border-radius: 50%;
+    color: white;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 479px) {
+  .header-main {
+    height: 6rem;
+    padding: 0 0.8rem;
+    gap: 0.8rem;
+  }
+  
+  .header__logo img {
+    height: 3rem;
+  }
+  
+  .header__hamburger {
+    gap: 0.3rem;
+  }
+  
+  .header__hamburger span {
+    width: 2rem;
+    height: 0.25rem;
+  }
+  
+  .header__form {
+    max-width: 20rem;
+  }
+  
+  .header__form .header__form-input {
+    font-size: 1.3rem;
+    padding: 0.7rem 3.5rem 0.7rem 1.2rem;
+    height: 3.5rem;
+  }
+  
+  .header__search {
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 0.8rem;
+  }
+  
+  .header__search i {
+    font-size: 1.2rem;
+  }
+  
+  .header__user img {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .header-menu.mobile-menu {
+    top: 6rem;
+    padding: 2rem 1rem;
+  }
+  
+  .header-menu.mobile-menu .header-menu__item a {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+  }
 }

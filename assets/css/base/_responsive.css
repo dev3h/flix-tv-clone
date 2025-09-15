@@ -1,0 +1,158 @@
+/* ========================================
+   RESPONSIVE BREAKPOINTS & UTILITIES
+   ======================================== */
+
+/* Breakpoints */
+:root {
+  --mobile-sm: 320px;
+  --mobile: 480px;
+  --tablet: 768px;
+  --laptop: 1024px;
+  --desktop: 1200px;
+  --desktop-lg: 1440px;
+}
+
+/* Container responsive */
+.container {
+  max-width: 133rem;
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 1439px) {
+  .container {
+    max-width: 120rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 96rem;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 72rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .container {
+    padding: 0 0.8rem;
+  }
+}
+
+/* Utility classes for responsive design */
+.hidden-mobile {
+  display: block;
+}
+
+.hidden-tablet {
+  display: block;
+}
+
+.hidden-desktop {
+  display: none;
+}
+
+.show-mobile {
+  display: none;
+}
+
+.show-tablet {
+  display: none;
+}
+
+.show-desktop {
+  display: block;
+}
+
+/* Mobile utilities */
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+  
+  .show-mobile {
+    display: block !important;
+  }
+  
+  .show-mobile-flex {
+    display: flex !important;
+  }
+  
+  .show-mobile-inline {
+    display: inline !important;
+  }
+}
+
+/* Tablet utilities */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hidden-tablet {
+    display: none !important;
+  }
+  
+  .show-tablet {
+    display: block !important;
+  }
+  
+  .show-tablet-flex {
+    display: flex !important;
+  }
+}
+
+/* Desktop utilities */
+@media (min-width: 1024px) {
+  .hidden-desktop {
+    display: none !important;
+  }
+  
+  .show-desktop {
+    display: block !important;
+  }
+  
+  .show-desktop-flex {
+    display: flex !important;
+  }
+}
+
+/* Text responsive utilities */
+@media (max-width: 767px) {
+  .text-center-mobile {
+    text-align: center !important;
+  }
+  
+  .text-left-mobile {
+    text-align: left !important;
+  }
+}
+
+/* Spacing responsive utilities */
+@media (max-width: 767px) {
+  .mb-mobile-2 {
+    margin-bottom: 2rem !important;
+  }
+  
+  .mb-mobile-3 {
+    margin-bottom: 3rem !important;
+  }
+  
+  .mt-mobile-2 {
+    margin-top: 2rem !important;
+  }
+  
+  .p-mobile-1 {
+    padding: 1rem !important;
+  }
+}

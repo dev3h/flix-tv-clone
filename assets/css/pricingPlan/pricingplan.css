@@ -8,7 +8,6 @@
   background-color: #131720;
 }
 .section1 {
-  width: 1476px;
   height: 137px;
   border-color: #151f30;
   border-style: solid none none;
@@ -16,14 +15,12 @@
   background-color: #131720;
   color: white;
   line-height: 24px;
-  margin: 101px 0px 0px;
+  margin-top: 101px;
   padding: 60px 0px 20px;
   text-align: left;
   display: flex;
 }
 .section1 h1 {
-  padding-left: 110px;
-  width: 635px;
   height: 46px;
   color: #ffffff;
   font-family: Rubik;
@@ -33,8 +30,7 @@
   text-align: left;
 }
 .section1-1 {
-  float: right;
-  width: 635px;
+  flex: 1;
   height: 46px;
   color: #212529;
   line-height: 24px;
@@ -43,45 +39,32 @@
   display: flex;
   flex-basis: 70%;
   justify-content: flex-end;
-  margin-left: 100px;
 }
 .section2 {
-  width: 1480px;
-  height: 458px;
+  height: auto;
   background-color: #131720;
   line-height: 24px;
   padding: 0px 0px 80px;
   text-align: left;
 }
-section2-1 {
-  width: 1330px;
-  height: 180px;
+.section2-1 {
+  width: 100%;
+  height: auto;
   background-color: #131720;
   flex-basis: 100%;
   line-height: 24px;
   padding: 0px 15px;
   text-align: left;
+  margin-bottom: 40px;
 }
-.section2-1 p {
-  width: 1362px;
-  height: 52px;
-  color: #e0e0e0;
-  font-family: Inter;
-  line-height: 26px;
-  margin: 30px 0px 10px;
-  text-align: left;
-  padding-left: 110px;
+
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
-.section2-1 p {
-  width: 1362px;
-  height: 78px;
-  color: #e0e0e0;
-  font-family: Inter;
-  line-height: 26px;
-  margin: 0px 0px 10px;
-  text-align: left;
-  padding-left: 110px;
-}
+
 .section2-2 i {
   width: 28px;
   height: 26px;
@@ -198,10 +181,6 @@ section2-1 {
   margin: 20px 0px 0px;
   text-align: left;
 }
-.section3 {
-  display: flex;
-  margin-left: 108px;
-}
 .section3-1 {
   display: flex;
 }
@@ -214,23 +193,11 @@ section2-1 {
 .section3-4 {
   display: flex;
 }
-.section4 {
-  width: 1480px;
-  height: 881px;
-  background-color: #131720;
-  line-height: 24px;
-  padding: 0px 0px 80px;
-  text-align: left;
-}
 .section5 {
-  width: 1330px;
   height: 801px;
   background-color: #131720;
-  flex-basis: 100%;
   line-height: 24px;
-  padding: 0px 15px;
   text-align: left;
-  margin-left: 80px;
 }
 .section6 {
   width: 1300px;
@@ -1020,52 +987,6 @@ section2-1 {
   width: 100%;
   background-color: #131720;
 }
-.section1 {
-  width: 1476px;
-  height: 137px;
-  border-color: #151f30;
-  border-style: solid none none;
-  border-width: 1px 0px 0px;
-  background-color: #131720;
-  color: white;
-  line-height: 24px;
-  margin: 101px 0px 0px;
-  padding: 60px 0px 20px;
-  text-align: left;
-  display: flex;
-}
-.section1 h1 {
-  padding-left: 110px;
-  width: 635px;
-  height: 46px;
-  color: #ffffff;
-  font-family: Rubik;
-  font-size: 38px;
-  line-height: 45.6px;
-  margin: 0px 0px 10px;
-  text-align: left;
-}
-.section1-1 {
-  float: right;
-  width: 635px;
-  height: 46px;
-  color: #212529;
-  line-height: 24px;
-  padding-left: 200px;
-  text-align: left;
-  display: flex;
-  flex-basis: 70%;
-  justify-content: flex-end;
-  margin-left: 100px;
-}
-.section2 {
-  width: 1480px;
-  height: 458px;
-  background-color: #131720;
-  line-height: 24px;
-  padding: 0px 0px 80px;
-  text-align: left;
-}
 section2-1 {
   width: 1330px;
   height: 180px;
@@ -1075,25 +996,14 @@ section2-1 {
   padding: 0px 15px;
   text-align: left;
 }
+
 .section2-1 p {
-  width: 1362px;
-  height: 52px;
-  color: #e0e0e0;
-  font-family: Inter;
-  line-height: 26px;
-  margin: 30px 0px 10px;
-  text-align: left;
-  padding-left: 110px;
-}
-.section2-1 p {
-  width: 1362px;
-  height: 78px;
   color: #e0e0e0;
   font-family: Inter;
   line-height: 26px;
   margin: 0px 0px 10px;
   text-align: left;
-  padding-left: 110px;
+  text-align: justify;
 }
 .section2-2 i {
   width: 28px;
@@ -1213,7 +1123,8 @@ section2-1 {
 }
 .section3 {
   display: flex;
-  margin-left: 108px;
+  justify-content: space-between;
+  margin-top: 32px;
 }
 .section3-1 {
   display: flex;
@@ -1228,25 +1139,14 @@ section2-1 {
   display: flex;
 }
 .section4 {
-  width: 1480px;
   height: 881px;
   background-color: #131720;
   line-height: 24px;
   padding: 0px 0px 80px;
   text-align: left;
 }
-.section5 {
-  width: 1330px;
-  height: 801px;
-  background-color: #131720;
-  flex-basis: 100%;
-  line-height: 24px;
-  padding: 0px 15px;
-  text-align: left;
-  margin-left: 80px;
-}
 .section6 {
-  width: 1300px;
+  width: 100%;
   height: 801px;
   background-color: #151f30;
   border-radius: 32px;
@@ -2028,4 +1928,273 @@ section2-1 {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+}
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet responsive */
+@media (max-width: 1023px) {
+  .wrapper {
+    padding-top: 100px;
+    overflow-x: hidden;
+  }
+  
+  .section1 {
+    height: auto;
+    padding: 40px 20px 20px;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .section1 h1 {
+    font-size: 3rem;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .section1-1 {
+    padding-left: 0;
+    justify-content: center;
+    flex-basis: auto;
+  }
+  
+  .section2 {
+    height: auto;
+    padding: 40px 20px 60px;
+  }
+  
+  .section2-1 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .section2-1 p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .section3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .section2-2, .section2-3, .section2-4, .section2-5 {
+    margin-right: 0 !important;
+    text-align: center;
+  }
+  
+  /* Pricing table responsive */
+  .section4, .section5, .section6 {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .section6 table {
+    min-width: 800px;
+    width: 100%;
+  }
+  
+  .section6-2, .section6-3, .section6-4 {
+    min-width: 200px;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .wrapper {
+    padding-top: 80px;
+    overflow-x: hidden;
+  }
+  
+  .section1 {
+    padding: 30px 15px 15px;
+    margin-top: 70px;
+    gap: 1rem;
+  }
+  
+  .section1 h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .section1-1 {
+    font-size: 14px;
+  }
+  
+  .section2 {
+    padding: 30px 15px 40px;
+  }
+  
+  .section2-1 p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  .section3 {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 25px;
+  }
+  
+  .section2-2, .section2-3, .section2-4, .section2-5 {
+    padding: 20px;
+    background-color: #151f30;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .section2-2 h3, .section2-3 h3, .section2-4 h3, .section2-5 h3 {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .section2-2 p, .section2-3 p, .section2-4 p, .section2-5 p {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  /* Pricing table - horizontal scroll on mobile */
+  .section4 {
+    overflow-x: auto;
+    padding: 20px 15px;
+  }
+  
+  .section5, .section6 {
+    min-width: 800px;
+  }
+  
+  .section6 table {
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  .section6-2-1 b, .section6-3-1 b, .section6-4-1 b {
+    font-size: 14px;
+  }
+  
+  .section6-2-1 p, .section6-3-1 p, .section6-4-1 p {
+    font-size: 18px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 479px) {
+  .wrapper {
+    padding-top: 70px;
+    overflow-x: hidden;
+  }
+  
+  .section1 {
+    padding: 20px 10px 10px;
+    margin-top: 60px;
+  }
+  
+  .section1 h1 {
+    font-size: 2rem;
+  }
+  
+  .section1-1 {
+    font-size: 12px;
+  }
+  
+  .section2 {
+    padding: 25px 10px 30px;
+  }
+  
+  .section2-1 p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .section3 {
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .section2-2, .section2-3, .section2-4, .section2-5 {
+    padding: 15px;
+  }
+  
+  .section4 {
+    padding: 15px 10px;
+  }
+  
+  .section6 table {
+    font-size: 11px;
+  }
+  
+  .section6-2-1 b, .section6-3-1 b, .section6-4-1 b {
+    font-size: 12px;
+  }
+/* Breadcrumb styling */
+.breadcrumb-separator {
+  margin: 0 10px;
+  color: #fff;
+}
+
+.breadcrumb-current {
+  color: #fff;
+}
+
+.section1-1 a {
+  margin-right: 0;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.section1-1 a:hover {
+  text-decoration: underline;
+}
+
+/* Features section styling */
+.section2-2, .section2-3, .section2-4, .section2-5 {
+  margin-right: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+/* Fix for features section widths */
+.section2-2 h3, .section2-3 h3, .section2-4 h3, .section2-5 h3 {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.section2-2 p, .section2-3 p, .section2-4 p, .section2-5 p {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Fix section layout */
+.section2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.section2-2, .section2-3, .section2-4, .section2-5 {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.section2-2:last-child, .section2-3:last-child, .section2-4:last-child, .section2-5:last-child {
+  margin-right: 0;
 }

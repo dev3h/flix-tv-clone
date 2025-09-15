@@ -127,3 +127,22 @@ button {
     margin: 0 15rem;
   }
 }
+
+/* Mobile overflow fix */
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  
+  .container-fluid {
+    padding: 0;
+    overflow-x: hidden;
+  }
+}

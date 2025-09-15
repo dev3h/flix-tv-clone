@@ -42,3 +42,91 @@ button.section__nav.section__nav--prev {
 button.section__nav.section__nav--next {
     right: 2rem;
 }
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet responsive */
+@media (max-width: 1023px) {
+  .subscription {
+    padding: 6rem 0;
+  }
+  
+  .subscription__slider--inner .slider-item {
+    flex: 1 0 16rem;
+  }
+  
+  .subscription__slider--inner .slider-item .card__cover {
+    height: 22rem;
+  }
+  
+  button.section__nav {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  button.section__nav.section__nav--prev {
+    left: 1rem;
+  }
+  
+  button.section__nav.section__nav--next {
+    right: 1rem;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .subscription {
+    padding: 4rem 0;
+  }
+  
+  .subscription__slider--inner .slider-item {
+    flex: 1 0 14rem;
+  }
+  
+  .subscription__slider--inner .slider-item .card__cover {
+    height: 18rem;
+  }
+  
+  .card .card__title {
+    font-size: 1.4rem;
+    max-width: 16rem;
+  }
+  
+  /* Hide navigation buttons on mobile */
+  button.section__nav {
+    display: none;
+  }
+  
+  /* Make slider scrollable on mobile */
+  .subscription__slider--inner {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .subscription__slider--inner::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 479px) {
+  .subscription {
+    padding: 3rem 0;
+  }
+  
+  .subscription__slider--inner .slider-item {
+    flex: 1 0 12rem;
+  }
+  
+  .subscription__slider--inner .slider-item .card__cover {
+    height: 16rem;
+  }
+  
+  .card .card__title {
+    font-size: 1.3rem;
+    max-width: 14rem;
+  }
+}
